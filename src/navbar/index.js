@@ -9,10 +9,21 @@ class Navbar extends React.Component {
 
     render() {
         // Styling Notes
-        // Total Navbar width 100% height 33px padding: 0
-        // margin top and bottom 40px
-        // flex align-Items: center
-        // justify-content: space-between
+        // Desktop
+            // Total Navbar width 100% height 33px padding: 0
+            // margin top and bottom 40px
+            // flex align-Items: center
+            // justify-content: space-between
+
+        // Tablet
+            // Total Navbar 689px X 26px
+            // margin-top 40px
+            // margin-bottom 52px
+
+        // Mobile
+            // Total Navbar 327px X 18px
+            // Hamburger 16px X 15px
+
         // Logo 235 X 25
         // Nav Section 283 X 15
         return(
