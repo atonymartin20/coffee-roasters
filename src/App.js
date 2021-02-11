@@ -12,10 +12,10 @@ class App extends React.Component {
 					<Route exact path='/'>
 						<Homepage />
 					</Route>
-					<Route path='about'>
+					<Route path='/about'>
 						<About />
 					</Route>
-					<Route path='plan'>
+					<Route path='/plan'>
 						<Subscribe />
 					</Route>
 					<Route>
