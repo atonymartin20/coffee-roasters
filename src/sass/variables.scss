@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap');
+
+// Colors
+$dark-cyan: #0E8784;
+$dark-grey-blue: #333D4B;
+$pale-orange: #FDD6BA;
+$light-cream: #FEFCF7;
+$grey: #83888F;
+
+// Fonts
+$fraunces: 'Fraunces', serif;
+$barlow: 'Barlow', sans-serif;
+
+// $tit
+
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url(path/to/file) format(Example: 'truetype' or 'opentype' depending on the file extension of your font);
+// }
+
+/*
+Title Alternate Big -> Fraunces Black, 150px, 72px line height All lowercase
+H1 -> Fraunces Black, 72px, 72px line height
+H2 -> Fraunces Black, 40px, 48px line height 
+H3 -> Fraunces Black, 32px, 36px line height
+H4 -> Fraunces Black, 24px, 32px line height
+Body -> Barlow Regular, 16px, 26px line height
+Navigation Menu -> Barlow Bold, 12px, 15px line height, 1.0 Character
+*/
