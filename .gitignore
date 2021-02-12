@@ -37,3 +37,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .eslintcache
+
+src/css/homepage.css.map
+src/css/about.css.map
+src/css/subscribe.css.map
