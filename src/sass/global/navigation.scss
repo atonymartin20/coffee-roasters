@@ -1,0 +1,28 @@
+// &:hover
+// cursor: pointer
+
+// &:disabled
+// color: $mdc-button-disabled-ink-color
+// cursor: default
+// pointer-events: none
+
+a {
+    color: grey;
+    cursor: pointer;
+    &:visited {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:link {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:active {
+        text-decoration: none;
+        color: $grey;
+    }
+}
