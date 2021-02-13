@@ -1,4 +1,7 @@
 import React from 'react';
+import Navbar from '../navbar';
+import Footer from '../footer';
+import '../css/subscribe.css';
 
 class Subscribe extends React.Component {
     state={
@@ -8,7 +11,8 @@ class Subscribe extends React.Component {
     render() {
         return(
             <div>
-
+				<Navbar />
+				<Footer />
             </div>
         )
     }
