@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from '../assets/shared/desktop/logo.svg';
 import { NavLink } from 'react-router-dom';
+import HamburgerIcon from '../assets/shared/mobile/icon-hamburger.svg';
+import CloseIcon from '../assets/shared/mobile/icon-close.svg';
 
 class Navbar extends React.Component {
     state={
@@ -26,8 +28,9 @@ class Navbar extends React.Component {
 
         // Logo 235 X 25
         // Nav Section 283 X 15
+
         return(
-            <div>
+            <div class='navbar'>
                 <img src={Logo} />
                 <nav>
                     <NavLink to='/'>
@@ -40,6 +43,7 @@ class Navbar extends React.Component {
                         Create your plan
                     </NavLink>
                 </nav>
+                <img src={HamburgerIcon} class='hamburger' />
             </div>
         )
     }
