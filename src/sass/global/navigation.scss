@@ -6,9 +6,42 @@
 // cursor: default
 // pointer-events: none
 
+.navbar {
+    @include flex(space-between, center);
+    width: 100%;
+    height: 33px;
+    margin: 40px 0px;
+            // Styling Notes
+        // Desktop
+            // Total Navbar width 100% height 33px padding: 0
+            // margin top and bottom 40px
+            // flex align-Items: center
+            // justify-content: space-between
+
+        // Tablet
+            // Total Navbar 689px X 26px
+            // margin-top 40px
+            // margin-bottom 52px
+
+        // Mobile
+            // Total Navbar 327px X 18px
+            // Hamburger 16px X 15px
+
+        // Logo 235 X 25
+        // Nav Section 283 X 15
+}
+
+.hamburger {
+    @media (min-width: 600px) {
+        display: none;
+    }
+}
+
 a {
-    color: grey;
+    color: $grey;
     cursor: pointer;
+    margin-left: 31.4px;
+    text-transform: uppercase;
     &:visited {
         text-decoration: none;
         color: $grey;
@@ -25,4 +58,8 @@ a {
         text-decoration: none;
         color: $grey;
     }
+}
+
+a:first-of-type {
+    margin-left: 0px;
 }
