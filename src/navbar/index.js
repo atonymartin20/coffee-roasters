@@ -9,6 +9,20 @@ class Navbar extends React.Component {
         open: false,
     }
 
+    openDropdown = (event) => {
+        event.preventDefault();
+        this.setState({
+            open: !this.state.open
+        })
+    }
+
+    closeDropdown = (event) => {
+        event.preventDefault();
+        this.setState({
+            open: !this.state.open
+        })
+    }
+
     render() {
         // Styling Notes
         // Desktop
@@ -30,21 +44,32 @@ class Navbar extends React.Component {
         // Nav Section 283 X 15
 
         return(
-            <div class='navbar'>
-                <img src={Logo} />
-                <nav>
-                    <NavLink to='/'>
-                        Home
-                    </NavLink>
-                    <NavLink to='/about'>
-                        About us
-                    </NavLink>
-                    <NavLink to='/plan'>
-                        Create your plan
-                    </NavLink>
-                </nav>
-                <img src={HamburgerIcon} class='hamburger' />
-            </div>
+            <>
+                {this.state.open ? 
+                    <div>
+                        <div class='navbar'>
+                            <img src={Logo} class='header-logo' />
+                            <img src={CloseIcon} class='close' onClick={this.closeDropdown} />
+                        </div>
+                    </div> 
+                :
+                    <div class='navbar'>
+                        <img src={Logo} class='header-logo' />
+                        <nav class='header-nav'>
+                            <NavLink to='/'>
+                                Home
+                            </NavLink>
+                            <NavLink to='/about'>
+                                About us
+                            </NavLink>
+                            <NavLink to='/plan'>
+                                Create your plan
+                            </NavLink>
+                        </nav>
+                        <img src={HamburgerIcon} class='hamburger' onClick={this.openDropdown} />
+                    </div>
+                }
+            </>
         )
     }
 }
