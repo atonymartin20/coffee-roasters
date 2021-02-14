@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../navbar';
+import Header from './header.js';
 import Footer from '../footer';
+import '../css/homepage.css';
 
 class Homepage extends React.Component {
     state={
@@ -8,11 +10,25 @@ class Homepage extends React.Component {
     }
 
     render() {
+		// Desktop
+			// 1440px outer Width
+			// 5.55555% outside container margin left and right
+			// 1280 px inner width
+
+		// Tablet
+			// 768px outer width
+			// 5.2083% outside container margin left and right
+			// 689 inner width
+
+
+		// Mobile
+			// 375px outside outer width
+
+			// 
         return(
-            <div>
+            <div class='homepage-outside-div'>
 				<Navbar />
-				<header>
-					<div>
+						<Header />
 						{/* Header Image 
 							1280px X 600px */}
 						{/* 135px bottom margin */}
@@ -32,8 +48,6 @@ class Homepage extends React.Component {
 						{/* Button left aligned
 							217px X 56px */}
 						{/* 200px bottom margin */}
-					</div>
-				</header>
 				<Footer />
             </div>
         )
