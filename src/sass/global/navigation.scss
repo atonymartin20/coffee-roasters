@@ -1,0 +1,90 @@
+// &:hover
+// cursor: pointer
+
+// &:disabled
+// color: $mdc-button-disabled-ink-color
+// cursor: default
+// pointer-events: none
+
+.navbar {
+    @include flex(space-between, center);
+    width: 100%;
+    max-width: 1280px;
+    height: 33px;
+    margin: 40px auto;
+
+    @media (max-width: $tablet-breakpoint) {
+        height: 26px;
+        margin-bottom: 52px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        height: 18px;
+        padding: 0px 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    @media (max-width: $mobile-breakpoint) {
+        width: 16px;
+        height: 15px;
+    }
+    @media (min-width: 601px) {
+        display: none;
+    }
+}
+
+.hamburger {
+    width: 25px;
+    height: 25px;
+    @media (max-width: $mobile-breakpoint) {
+        width: 16px;
+        height: 15px;
+    }
+    @media (min-width: 601px) {
+        display: none;
+    }
+}
+
+a {
+    color: $grey;
+    cursor: pointer;
+    margin-left: 31.4px;
+    text-transform: uppercase;
+    &:visited {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:link {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $grey;
+    }
+    &:active {
+        text-decoration: none;
+        color: $grey;
+    }
+}
+
+a:first-of-type {
+    margin-left: 0px;
+}
+
+.header-nav {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.header-logo {
+    @media (max-width: $mobile-breakpoint) {
+        height: 18px;
+        width: 163px;
+    }
+}
