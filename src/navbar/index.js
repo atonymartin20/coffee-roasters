@@ -3,6 +3,7 @@ import Logo from '../assets/shared/desktop/logo.svg';
 import { NavLink } from 'react-router-dom';
 import HamburgerIcon from '../assets/shared/mobile/icon-hamburger.svg';
 import CloseIcon from '../assets/shared/mobile/icon-close.svg';
+import Dropdown from './dropdown.js';
 
 class Navbar extends React.Component {
     state={
@@ -47,10 +48,12 @@ class Navbar extends React.Component {
             <>
                 {this.state.open ? 
                     <div>
-                        <div class='navbar'>
+                        {/* <div class='navbar'>
                             <img src={Logo} class='header-logo' />
                             <img src={CloseIcon} class='close' onClick={this.closeDropdown} />
                         </div>
+                        <Dropdown /> */}
+                        <Dropdown close={this.closeDropdown} />
                     </div> 
                 :
                     <div class='navbar'>
