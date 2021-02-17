@@ -1,5 +1,42 @@
-@mixin flex($jc:center, $ai:center) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
+@mixin flex($jc: center, $ai: center) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+/// Base path for assets (fonts, images...),
+/// should not include trailing slash
+/// @access public
+/// @type String
+$asset-base-path: '../assets' !default;
+
+/// Asset URL builder
+/// @access private
+/// @param {String} $type - Asset type, matching folder name
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the asset
+@function asset($type, $mode, $file) {
+	@return url($asset-base-path + '/' + $type + '/' + $mode + '/' + $file);
+}
+
+/// Image asset helper
+/// @access public
+/// @param {String} $file - Asset file name, including extension
+/// @return {URL} - A `url()` function leading to the image
+/// @require {function} asset
+@function about-image($mode, $file) {
+	@return asset('about', $mode, $file);
+}
+
+@function home-image($mode, $file) {
+    @return asset('home', $mode, $file);
+}
+// background-image: home-image(desktop, image-hero-coffeepress.jpg);
+
+@function plan-image($mode, $file) {
+    @return asset('plan', $mode, $file);
+}
+
+@function shared-image($mode, $file) {
+    @return asset('shared', $mode, $file);
 }
