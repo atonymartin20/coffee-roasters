@@ -116,6 +116,11 @@ nav {
   height: 33px;
   margin: 40px auto;
 }
+@media (min-width: 1440px) {
+  .navbar {
+    min-width: 1280px;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     height: 26px;
@@ -136,8 +141,8 @@ nav {
 }
 @media (max-width: 375px) {
   .close {
-    width: 16px;
-    height: 15px;
+    width: 14px;
+    height: 13px;
   }
 }
 @media (min-width: 601px) {
@@ -197,11 +202,47 @@ a:first-of-type {
 
 @media (max-width: 375px) {
   .header-logo {
-    height: 18px;
     width: 163px;
+    height: 18px;
   }
 }
 
+.dropdown {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+}
+
+.dropdown-links-container {
+  /* Rectangle */
+  position: absolute;
+  width: 375px;
+  height: 577px;
+  left: 0px;
+  top: 130px;
+  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+}
+
+.dropdown-link {
+  color: #333D4B;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  text-transform: none;
+}
+
+/* Home */
+/* Mobile - Menu */
 footer {
   width: 100%;
   background-color: #2C343E;
@@ -210,9 +251,23 @@ footer {
 .homepage-outside-div {
   width: 100%;
   max-width: 1440px;
-  padding: 0 4.255%;
+  padding: 0 5.556%;
   margin: 0 auto;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .homepage-outside-div {
+    min-width: 1440px;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-outside-div {
+    padding: 0 5.14323%;
+  }
 }
 @media (max-width: 375px) {
   .homepage-outside-div {
@@ -220,20 +275,157 @@ footer {
   }
 }
 
-/* Group 7 */
-/* Bitmap */
-/* Mask */
-/* Mask */
-/* Bitmap */
-/* Group 6 */
-/* Group 2 */
-/* Great coffee made si */
-/* or 100% */
-/* Start your mornings */
-/* or 162% */
-/* Group 3 */
-/* Rectangle */
-/* Create your plan */
-/* identical to box height, or 139% */
+header {
+  background: #A2A2A2;
+  border-radius: 10px;
+  background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1280px;
+  height: 600px;
+  padding: 6.484375%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 135px;
+}
+@media (min-width: 1440px) {
+  header {
+    min-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 500px;
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+    padding: 8.1277%;
+    margin-bottom: 142px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    padding: 8% 6.484375%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 6.4%;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 87.2%;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+}
+
+.header-text-container {
+  width: 493px;
+  height: 367px;
+}
+@media (max-width: 768px) {
+  .header-text-container {
+    width: 398px;
+    height: 292px;
+  }
+}
+@media (max-width: 500px) {
+  .header-text-container {
+    width: 298px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-container {
+    width: 279px;
+    height: 301px;
+  }
+}
+.header-text-container h1 {
+  color: #FEFCF7;
+}
+@media (max-width: 768px) {
+  .header-text-container h1 {
+    font-size: 4.8rem;
+    line-height: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-container h1 {
+    font-size: 4rem;
+    line-height: 40px;
+  }
+}
+.header-text-container body {
+  width: 440px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-top: 32px;
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .header-text-container body {
+    width: 398px;
+    font-size: 1.5rem;
+    line-height: 25px;
+    opacity: 0.75;
+    margin-top: 25px;
+    margin-bottom: 38px;
+  }
+}
+@media (max-width: 500px) {
+  .header-text-container body {
+    width: 298px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-container body {
+    width: 279px;
+  }
+}
+.header-text-container button {
+  width: 217px;
+  height: 56px;
+  background: #0E8784;
+  border-radius: 6px;
+  border: 0px;
+  color: #FEFCF7;
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  line-height: 25px;
+  font-style: normal;
+}
+.header-text-container button a {
+  color: #FEFCF7;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+}
+.header-text-container button a:visited {
+  text-decoration: none;
+  color: #FEFCF7;
+}
+.header-text-container button a:link {
+  text-decoration: none;
+  color: #FEFCF7;
+}
+.header-text-container button a:hover {
+  text-decoration: none;
+  color: #FEFCF7;
+}
+.header-text-container button a:active {
+  text-decoration: none;
+  color: #FEFCF7;
+}
 
 /*# sourceMappingURL=homepage.css.map */

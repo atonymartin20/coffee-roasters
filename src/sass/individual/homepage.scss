@@ -54,10 +54,14 @@ header {
     }
 
     @media (max-width: $mobile-breakpoint) {
-        margin: 0px 6.4%;
-        @include flex(center, center);
         background-image: home-image('mobile', 'image-hero-coffeepress.jpg');
-
+        @include flex(center, center);
+        margin: 0px 6.4%;
+        padding: 0px;
+        box-sizing: border-box;
+        width: 87.2%;
+        text-align: center;
+        margin-bottom: 120px;
     }
 }
 
@@ -74,6 +78,11 @@ header {
         width: 298px;
     }
 
+    @media (max-width: $mobile-breakpoint) {
+        width: 279px;
+        height: 301px;
+    }
+
     h1 {
         color: $light-cream;
         @media (max-width: $tablet-breakpoint) {
@@ -82,10 +91,8 @@ header {
         }
 
         @media (max-width: $mobile-breakpoint) {
-            // font-size: 1.1rem;
-            // line-height: 1px;
-            height: 301px;
-            width: 279px;
+            font-size: 4.0rem;
+            line-height: 40px;
         }
     }
 
