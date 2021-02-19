@@ -9,7 +9,7 @@ class Footer extends React.Component {
     render() {
         return(
             <footer>
-                <img src={Logo} class='logo' />
+                <img src={Logo} class='footer-logo' />
                 <nav>
                     <NavLink to='/'>
                         Home
@@ -21,7 +21,7 @@ class Footer extends React.Component {
                         Create your plan
                     </NavLink>
                 </nav>
-                <div>
+                <div class='social-div'>
                     <img src={FBLogo} class='social-logo' />
                     <img src={TwitterLogo} class='twitter-logo' />
                     <img src={IGLogo} class='social-logo' />
