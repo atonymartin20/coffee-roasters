@@ -22,9 +22,9 @@ class Footer extends React.Component {
                     </NavLink>
                 </nav>
                 <div>
-                    <img src={FBLogo} />
-                    <img src={TwitterLogo} />
-                    <img src={IGLogo} />
+                    <img src={FBLogo} class='social-logo' />
+                    <img src={TwitterLogo} class='twitter-logo' />
+                    <img src={IGLogo} class='social-logo' />
                 </div>
             </footer>
         )
