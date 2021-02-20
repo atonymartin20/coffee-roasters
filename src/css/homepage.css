@@ -245,7 +245,124 @@ a:first-of-type {
 /* Mobile - Menu */
 footer {
   width: 100%;
+  max-width: 1280px;
+  height: 120px;
   background-color: #2C343E;
+  margin-bottom: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 6.640625%;
+}
+@media (min-width: 1440px) {
+  footer {
+    min-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 88px;
+  }
+}
+@media (max-width: 950px) {
+  footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 270px;
+    margin-bottom: 72px;
+    padding: 54px 54px 45px 54px;
+  }
+}
+@media (max-width: 460px) {
+  footer {
+    padding: 54px 0px 45px 0px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    height: 346px;
+    margin: 0px 6.4% 72px 6.4%;
+    width: 87.2%;
+  }
+}
+footer nav {
+  margin-left: 9.4%;
+  margin-right: auto;
+}
+@media (max-width: 950px) {
+  footer nav {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  footer nav {
+    padding-left: 4.5%;
+    margin-bottom: 31px;
+  }
+}
+@media (max-width: 375px) {
+  footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 27px;
+  }
+}
+@media (max-width: 375px) {
+  footer nav a {
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+}
+footer .social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  footer .social-div {
+    margin-bottom: 8px;
+  }
+}
+footer .social-logo {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  footer .social-logo {
+    margin-left: 24px;
+  }
+}
+footer .social-logo:first-of-type {
+  margin-left: 0px;
+}
+footer .twitter-logo {
+  width: 24px;
+  height: 19.5px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  footer .twitter-logo {
+    margin-left: 24px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-logo {
+    width: 217.85px;
+    height: 24px;
+  }
 }
 
 .homepage-outside-div {
@@ -262,6 +379,7 @@ footer {
 @media (min-width: 1440px) {
   .homepage-outside-div {
     min-width: 1440px;
+    padding: 0px;
   }
 }
 @media (max-width: 768px) {
