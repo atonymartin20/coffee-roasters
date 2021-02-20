@@ -16,7 +16,7 @@
     @media (min-width: $desktop-breakpoint) {
         min-width: 1280px;
     }
-    
+
     @media (max-width: $tablet-breakpoint) {
         height: 26px;
         margin-bottom: 52px;
@@ -105,7 +105,6 @@ a:first-of-type {
     top: 0px;
     @include flex(flex-start, center);
     flex-direction: column;
-    background-color: yellow;
     background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
     // transform: matrix(1, 0, 0, -1, 0, 0);
 
