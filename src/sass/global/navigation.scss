@@ -1,11 +1,3 @@
-// &:hover
-// cursor: pointer
-
-// &:disabled
-// color: $mdc-button-disabled-ink-color
-// cursor: default
-// pointer-events: none
-
 .navbar {
     @include flex(space-between, center);
     width: 100%;
@@ -29,15 +21,34 @@
     }
 }
 
+.nav-spacer {
+    width: 100%;
+    max-width: 1280px;
+    height: 33px;
+    margin: 40px auto;
+
+    @media (min-width: $desktop-breakpoint) {
+        min-width: 1280px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        height: 26px;
+        margin-bottom: 52px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        height: 18px;
+        padding: 0px 24px;
+        margin-bottom: 40px;
+    }
+}
+
 .close {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     @media (max-width: $mobile-breakpoint) {
         width: 14px;
         height: 13px;
-    }
-    @media (min-width: 601px) {
-        display: none;
     }
 }
 
@@ -100,36 +111,29 @@ a:first-of-type {
     top: 0;
     left: 0;
     position: fixed;
-    // height: 100vh;
-    z-index: 100;
+    z-index: 1;
     top: 0px;
     @include flex(flex-start, center);
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-    // transform: matrix(1, 0, 0, -1, 0, 0);
+    padding: 0 5.556%;
 
-    // position: 'fixed',
-    // zIndex: 1,
-    // left: 0,
-    // top: 0,
-    // width: '100%',
-    // height: '100%',
-    // overflow: 'auto',
-    // backgroundColor: 'rgba(43, 43, 43, 0.3)',
+    @media (max-width: $tablet-breakpoint) {
+        padding: 0 5.14323%;
+    }
 
+    @media (max-width: $mobile-breakpoint) {
+        padding: 0px;
+    }
 }
 
 .dropdown-links-container {
-/* Rectangle */
     position: absolute;
-    width: 375px;
+    width: 100%;
     height: 577px;
     left: 0px;
-    top: 130px;
-
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-    // transform: matrix(1, 0, 0, -1, 0, 0);
-
+    top: 95px;
+    padding-top: 35px;
+    background: linear-gradient(to top, rgba(254, 252, 247, 0.504981) 10%, #FEFCF7 52%);
 }
 
 .dropdown-link {
@@ -139,467 +143,3 @@ a:first-of-type {
     margin: 0px;
     text-transform: none;
 }
-
-/* Home */
-
-// position: absolute;
-// width: 75px;
-// height: 32px;
-// left: 149.5px;
-// top: 130px;
-
-
-/* Mobile - Menu */
-
-// position: relative;
-// width: 375px;
-// height: 667px;
-
-// background: #FEFCF7;
-
-
-// /* Group 6 */
-
-// position: absolute;
-// width: 163px;
-// height: 18px;
-// left: 24px;
-// top: 32px;
-
-
-
-// /* Group 5 */
-
-// position: absolute;
-// width: 163px;
-// height: 18px;
-// left: 24px;
-// top: 32px;
-
-
-
-// /* coffeeroasters */
-
-// position: absolute;
-// width: 140.21px;
-// height: 16.62px;
-// left: 46.72px;
-// top: 32.31px;
-
-// background: #333D4B;
-
-
-// /* Path */
-
-// position: absolute;
-// width: 9.7px;
-// height: 10.71px;
-// left: 46.72px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 11.11px;
-// height: 10.69px;
-// left: 57.11px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 2.85px;
-// height: 8.32px;
-// left: 61.26px;
-// top: 39.37px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 7.89px;
-// height: 16.35px;
-// left: 68.75px;
-// top: 32.31px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 7.89px;
-// height: 16.35px;
-// left: 76.61px;
-// top: 32.31px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 10.19px;
-// height: 10.71px;
-// left: 84.57px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 2.2px;
-// height: 3.4px;
-// left: 88.39px;
-// top: 39.37px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 10.19px;
-// height: 10.71px;
-// left: 95.33px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 2.2px;
-// height: 3.4px;
-// left: 99.15px;
-// top: 39.37px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 9.7px;
-// height: 10.48px;
-// left: 106.15px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 11.11px;
-// height: 10.69px;
-// left: 116.28px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 2.85px;
-// height: 8.32px;
-// left: 120.43px;
-// top: 39.37px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 11.04px;
-// height: 10.71px;
-// left: 128.03px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 1.47px;
-// height: 3.14px;
-// left: 132.16px;
-// top: 43.97px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 8.95px;
-// height: 10.75px;
-// left: 139.45px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 8.06px;
-// height: 13.19px;
-// left: 148.63px;
-// top: 35.69px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 10.19px;
-// height: 10.71px;
-// left: 157px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 2.2px;
-// height: 3.4px;
-// left: 160.81px;
-// top: 39.37px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 9.7px;
-// height: 10.48px;
-// left: 167.82px;
-// top: 38.18px;
-
-
-
-// /* Path */
-
-// position: absolute;
-// width: 8.95px;
-// height: 10.75px;
-// left: 177.98px;
-// top: 38.18px;
-
-
-// /* Path */
-
-// position: absolute;
-// width: 11.4px;
-// height: 11.42px;
-// left: 41.2px;
-// top: 38.19px;
-
-// transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-// /* Path */
-
-// position: absolute;
-// width: 8.55px;
-// height: 8.57px;
-// left: 39.78px;
-// top: 39.62px;
-
-// transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-// /* Path */
-
-// position: absolute;
-// width: 10.81px;
-// height: 10.84px;
-// left: 35.43px;
-// top: 33px;
-
-// background: #000000;
-// transform: matrix(-1, 0, 0, 1, 0, 0);
-
-
-// /* Group 10 */
-
-// position: absolute;
-// width: 327px;
-// height: 500px;
-// left: 24px;
-// top: 90px;
-
-
-
-// /* Group 4 */
-
-// position: absolute;
-// width: 327px;
-// height: 500px;
-// left: 24px;
-// top: 90px;
-
-
-
-// /* Bitmap */
-
-// position: absolute;
-// width: 327px;
-// height: 500px;
-// left: 24px;
-// top: 90px;
-
-
-
-// /* Mask */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 0%;
-// bottom: 0%;
-
-// background: #A2A2A2;
-// border-radius: 10px;
-
-
-// /* Mask */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 0%;
-// bottom: 0%;
-
-// background: #A2A2A2;
-// border-radius: 10px;
-
-
-// /* Object */
-
-// position: absolute;
-// width: 100px;
-// height: 100px;
-// left: 0px;
-// top: 0px;
-
-
-
-// /* Bitmap */
-
-// position: absolute;
-// width: 1284px;
-// height: 854px;
-// left: calc(50% - 1284px/2 + 116.5px);
-// top: calc(50% - 854px/2 - 177px);
-
-// background: url(Image.png);
-
-
-// /* Bitmap */
-
-// position: absolute;
-// width: 1284px;
-// height: 854px;
-// left: calc(50% - 1284px/2 + 116.5px);
-// top: calc(50% - 854px/2 - 177px);
-
-// background: url(Image.png);
-
-
-// /* Bitmap */
-
-// position: absolute;
-// width: 1284px;
-// height: 854px;
-// left: calc(50% - 1284px/2 + 116.5px);
-// top: calc(50% - 854px/2 - 177px);
-
-// background: rgba(0, 0, 0, 0.600551);
-
-
-// /* Group */
-
-// position: absolute;
-// width: 279px;
-// height: 301px;
-// left: 48px;
-// top: 190px;
-
-
-
-// /* Great coffee made si */
-
-// position: absolute;
-// height: 81px;
-// left: 0%;
-// right: 0%;
-// top: calc(50% - 81px/2 - 110px);
-
-// font-family: Fraunces 9pt;
-// font-style: normal;
-// font-weight: 900;
-// font-size: 40px;
-// line-height: 40px;
-// /* or 100% */
-// text-align: center;
-
-// color: #FEFCF7;
-
-
-
-// /* Start your mornings */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 34.88%;
-// bottom: 31.56%;
-
-// font-family: Barlow;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 15px;
-// line-height: 25px;
-// /* or 167% */
-// text-align: center;
-
-// color: #FEFCF7;
-
-// mix-blend-mode: normal;
-// opacity: 0.8;
-
-
-// /* Group 3 */
-
-// position: absolute;
-// left: 11.11%;
-// right: 11.11%;
-// top: 81.4%;
-// bottom: 0%;
-
-
-
-// /* Rectangle */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 0%;
-// bottom: 0%;
-
-// background: #0E8784;
-// border-radius: 6px;
-
-
-// /* Rectangle */
-
-// position: absolute;
-// width: 375px;
-// height: 577px;
-// left: 0px;
-// top: 667px;
-
-// background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-// transform: matrix(1, 0, 0, -1, 0, 0);
