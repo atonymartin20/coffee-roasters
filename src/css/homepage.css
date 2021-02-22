@@ -100,11 +100,41 @@ nav {
   letter-spacing: 1px;
 }
 
-.title {
+.title-alt {
   font-size: 15rem;
   font-family: "Fraunces", serif;
   line-height: 72px;
   text-transform: lowercase;
+}
+@media (max-width: 1200px) {
+  .title-alt {
+    font-size: 12rem;
+  }
+}
+@media (max-width: 975px) {
+  .title-alt {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .title-alt {
+    font-size: 9.6rem;
+  }
+}
+@media (max-width: 765px) {
+  .title-alt {
+    font-size: 7.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .title-alt {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .title-alt {
+    font-size: 4rem;
+  }
 }
 
 .navbar {
@@ -135,19 +165,39 @@ nav {
   }
 }
 
+.nav-spacer {
+  width: 100%;
+  max-width: 1280px;
+  height: 33px;
+  margin: 40px auto;
+}
+@media (min-width: 1440px) {
+  .nav-spacer {
+    min-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-spacer {
+    height: 26px;
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 375px) {
+  .nav-spacer {
+    height: 18px;
+    padding: 0px 24px;
+    margin-bottom: 40px;
+  }
+}
+
 .close {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 @media (max-width: 375px) {
   .close {
     width: 14px;
     height: 13px;
-  }
-}
-@media (min-width: 601px) {
-  .close {
-    display: none;
   }
 }
 
@@ -214,23 +264,33 @@ a:first-of-type {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   top: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  padding: 0 5.556%;
+}
+@media (max-width: 768px) {
+  .dropdown {
+    padding: 0 5.14323%;
+  }
+}
+@media (max-width: 375px) {
+  .dropdown {
+    padding: 0px;
+  }
 }
 
 .dropdown-links-container {
-  /* Rectangle */
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 577px;
   left: 0px;
-  top: 130px;
-  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  top: 95px;
+  padding-top: 35px;
+  background: linear-gradient(to top, rgba(254, 252, 247, 0.504981) 10%, #FEFCF7 52%);
 }
 
 .dropdown-link {
@@ -241,8 +301,6 @@ a:first-of-type {
   text-transform: none;
 }
 
-/* Home */
-/* Mobile - Menu */
 footer {
   width: 100%;
   max-width: 1280px;
@@ -544,6 +602,92 @@ header {
 .header-text-container button a:active {
   text-decoration: none;
   color: #FEFCF7;
+}
+
+.collection-div {
+  width: 100%;
+  max-width: 1111px;
+  height: 524.55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.collection-div .top-div {
+  width: 100%;
+  max-width: 1111px;
+  height: 196px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.collection-div .top-div .inside-top-div {
+  background: -webkit-linear-gradient(270deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+  width: 100%;
+  height: 100%;
+  background-color: #83888F;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.collection-div .top-div h1 {
+  text-align: center;
+  color: #83888F;
+  margin-bottom: 33px;
+}
+@media (max-width: 1200px) {
+  .collection-div .top-div h1 {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 975px) {
+  .collection-div .top-div h1 {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .collection-div .top-div h1 {
+    margin-bottom: 20px;
+  }
+}
+.collection-div .coffee-types-div {
+  width: 100%;
+  max-width: 1111px;
+  height: 398.55px;
+  margin-top: -45px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.collection-div .coffee-types-div .coffee-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.collection-div .coffee-types-div .coffee-type .img-box {
+  width: 255px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 2.52025%;
+}
+.collection-div .coffee-types-div .coffee-type .img-box .coffee-bag-img {
+  width: 90%;
+  height: 90%;
+}
+.collection-div .coffee-types-div .coffee-type .coffee-description {
+  width: 255px;
+  height: 134px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
