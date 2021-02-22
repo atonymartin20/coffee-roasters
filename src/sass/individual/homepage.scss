@@ -174,7 +174,7 @@ header {
         max-width: 1111px;
         height: 196px;
         mix-blend-mode: normal;
-        opacity: 0.5;
+        opacity: 1.0;
         @include flex(center, flex-end);
 
         .inside-top-div {
@@ -190,11 +190,21 @@ header {
         }
 
         h1 {
-            font-size: 15.0rem;
             text-align: center;
             color: $grey;
             margin-bottom: 33px;
-            text-transform: lowercase;
+
+            @media (max-width: 1200px) {
+                margin-bottom: 27px;
+            }
+
+            @media (max-width: 975px) {
+                margin-bottom: 22px;
+            }
+
+            @media (max-width: 800px) {
+                margin-bottom: 20px;
+            }
         }
 
     }
@@ -203,5 +213,272 @@ header {
         width: 100%;
         max-width: 1111px;
         height: 398.55px;
+        margin-top: -45px;
+        z-index: 1;
+        @include flex(center, flex-start);
+
+        .coffee-type {
+            @include flex(space-between, center);
+            flex-direction: column;
+
+            .img-box {
+                width: 255px;
+                height: 193px;
+                @include flex(center, flex-start);
+                margin-right: 2.52025%;
+    
+                .coffee-bag-img {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+            .coffee-description {
+                width: 255px;
+                height: 134px;
+            }
+        }
     }
 }
+
+// /* Group 4 */
+
+// width: 255px;
+// height: 134px;
+// left: 165px;
+// top: 1239.55px;
+
+
+
+// /* Gran Espresso */
+
+// position: absolute;
+// height: 32px;
+// left: 0%;
+// right: 0%;
+// top: calc(50% - 32px/2 - 51px);
+
+// font-family: Fraunces 9pt;
+// font-style: normal;
+// font-weight: 900;
+// font-size: 24px;
+// line-height: 32px;
+// /* identical to box height, or 133% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Light and flavorful */
+
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 41.79%;
+// bottom: 0%;
+
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 16px;
+// line-height: 26px;
+// /* or 162% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Group 4 Copy */
+
+// position: absolute;
+// width: 255px;
+// height: 134px;
+// left: 450px;
+// top: 1239.55px;
+
+
+
+// /* Planalto */
+
+// position: absolute;
+// height: 32px;
+// left: 0%;
+// right: 0%;
+// top: calc(50% - 32px/2 - 51px);
+
+// font-family: Fraunces 9pt;
+// font-style: normal;
+// font-weight: 900;
+// font-size: 24px;
+// line-height: 32px;
+// /* identical to box height, or 133% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Brazilian dark roast */
+
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 41.79%;
+// bottom: 0%;
+
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 16px;
+// line-height: 26px;
+// /* or 162% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Group 4 Copy 2 */
+
+// position: absolute;
+// width: 255px;
+// height: 134px;
+// left: 735px;
+// top: 1239.55px;
+
+
+
+// /* Piccollo */
+
+// position: absolute;
+// height: 32px;
+// left: 0%;
+// right: 0%;
+// top: calc(50% - 32px/2 - 51px);
+
+// font-family: Fraunces 9pt;
+// font-style: normal;
+// font-weight: 900;
+// font-size: 24px;
+// line-height: 32px;
+// /* identical to box height, or 133% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Mild and smooth blen */
+
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 41.79%;
+// bottom: 0%;
+
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 16px;
+// line-height: 26px;
+// /* or 162% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Group 4 Copy 3 */
+
+// position: absolute;
+// width: 255px;
+// height: 134px;
+// left: 1020px;
+// top: 1239.55px;
+
+
+
+// /* Danche */
+
+// position: absolute;
+// height: 32px;
+// left: 0%;
+// right: 0%;
+// top: calc(50% - 32px/2 - 51px);
+
+// font-family: Fraunces 9pt;
+// font-style: normal;
+// font-weight: 900;
+// font-size: 24px;
+// line-height: 32px;
+// /* identical to box height, or 133% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* Ethiopian hand-harve */
+
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 41.79%;
+// bottom: 0%;
+
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 16px;
+// line-height: 26px;
+// /* or 162% */
+// text-align: center;
+
+// color: #333D4B;
+
+
+
+// /* kopi1 copy */
+
+// position: absolute;
+// width: 255px;
+// height: 193px;
+// left: 165px;
+// top: 975px;
+
+// background: url(Image.png);
+
+
+// /* kopi4 */
+
+// position: absolute;
+// width: 234.82px;
+// height: 177.48px;
+// left: 1041.18px;
+// top: 990.52px;
+
+// background: url(Image.png);
+
+
+// /* kopi3 */
+
+// position: absolute;
+// width: 256px;
+// height: 193px;
+// left: 734px;
+// top: 975px;
+
+// background: url(Image.png);
+
+
+// /* kopi2 */
+
+// position: absolute;
+// width: 256px;
+// height: 193px;
+// left: 450px;
+// top: 975px;
+
+// background: url(Image.png);
