@@ -1,7 +1,4 @@
 import React from 'react';
-import CoffeeBeanIcon from '../assets/home/desktop/icon-coffee-bean.svg';
-import GiftIcon from '../assets/home/desktop/icon-gift.svg';
-import TruckIcon from '../assets/home/desktop/icon-truck.svg';
 import DancheCoffee from '../assets/home/desktop/image-danche.png';
 import GranEspressoCoffee from '../assets/home/desktop/image-gran-espresso.png';
 import PiccolloCoffee from '../assets/home/desktop/image-piccollo.png';
@@ -20,7 +17,7 @@ class Collection extends React.Component {
                 <div class='coffee-types-div'>
                     <div class='coffee-type'>
                         <div class='img-box'>
-                            <img src={GranEspressoCoffee} class='coffee-bag-img' />
+                            <img src={GranEspressoCoffee} class='coffee-bag-img' alt='Gran Espresso Coffe Bag' />
                         </div>
                         <div class='coffee-description'>
                             <h4>Gran Espresso</h4>
@@ -30,7 +27,7 @@ class Collection extends React.Component {
 
                     <div class='coffee-type'>
                         <div class='img-box'>
-                            <img src={PlanaltoCoffee} class='coffee-bag-img' />
+                            <img src={PlanaltoCoffee} class='coffee-bag-img' alt='Planalto Coffe Bag' />
                         </div>
                         <div class='coffee-description'>
                             <h4>Planalto</h4>
@@ -40,7 +37,7 @@ class Collection extends React.Component {
 
                     <div class='coffee-type'>
                         <div class='img-box'>
-                            <img src={PiccolloCoffee} class='coffee-bag-img' />
+                            <img src={PiccolloCoffee} class='coffee-bag-img' alt='Piccollo Coffe Bag' />
                         </div>
                         <div class='coffee-description'>
                             <h4>Piccollo</h4>
@@ -50,7 +47,7 @@ class Collection extends React.Component {
 
                     <div class='coffee-type'>
                         <div class='img-box'>
-                            <img src={DancheCoffee} class='coffee-bag-img' />
+                            <img src={DancheCoffee} class='coffee-bag-img' alt='Danche Coffe Bag' />
                         </div>
                         <div class='coffee-description'>
                             <h4>Danche</h4>

@@ -9,7 +9,7 @@ class Footer extends React.Component {
     render() {
         return(
             <footer>
-                <img src={Logo} class='footer-logo' />
+                <img src={Logo} class='footer-logo' alt='Website Logo' />
                 <nav>
                     <NavLink to='/'>
                         Home
@@ -22,9 +22,9 @@ class Footer extends React.Component {
                     </NavLink>
                 </nav>
                 <div class='social-div'>
-                    <img src={FBLogo} class='social-logo' />
-                    <img src={TwitterLogo} class='twitter-logo' />
-                    <img src={IGLogo} class='social-logo' />
+                    <img src={FBLogo} class='social-logo' alt='Facebook Logo' />
+                    <img src={TwitterLogo} class='twitter-logo' alt='Twitter Logo' />
+                    <img src={IGLogo} class='social-logo' alt='Instagram Logo' />
                 </div>
             </footer>
         )

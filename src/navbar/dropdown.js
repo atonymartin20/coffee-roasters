@@ -10,8 +10,8 @@ class Dropdown extends React.Component {
         return(
             <div class='dropdown'>
                 <div class='navbar'>
-                    <img src={Logo} class='header-logo' />
-                    <img src={CloseIcon} class='close' onClick={this.props.close} />
+                    <img src={Logo} class='header-logo' alt='Website Logo' />
+                    <img src={CloseIcon} class='close' onClick={this.props.close} alt='Close Icon' />
                 </div>
 
                 <div class='dropdown-links-container'>

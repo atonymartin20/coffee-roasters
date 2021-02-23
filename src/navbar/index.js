@@ -33,7 +33,7 @@ class Navbar extends React.Component {
                     </div> 
                 :
                     <div class='navbar'>
-                        <img src={Logo} class='header-logo' />
+                        <img src={Logo} class='header-logo' alt='Website Logo' />
                         <nav class='header-nav'>
                             <NavLink to='/'>
                                 Home
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
                                 Create your plan
                             </NavLink>
                         </nav>
-                        <img src={HamburgerIcon} class='hamburger' onClick={this.openDropdown} />
+                        <img src={HamburgerIcon} class='hamburger' onClick={this.openDropdown} alt='Close Icon' />
                     </div>
                 }
             </>
