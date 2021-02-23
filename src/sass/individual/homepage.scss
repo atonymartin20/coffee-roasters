@@ -176,6 +176,10 @@ header {
         margin-bottom: 143px;
     }
 
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+
     .top-div {
         width: 100%;
         max-width: 1111px;
@@ -257,6 +261,14 @@ header {
                 margin-bottom: 25px;
             }
 
+            @media (max-width: 700px) {
+                width: 100%;
+            }
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
+
             .img-box {
                 width: 255px;
                 height: 193px;
@@ -294,6 +306,7 @@ header {
                     margin-bottom: 30px;
                     padding-left: 5px;
                     width: 282px;
+                    height: 106px;
                 }
 
                 body {
