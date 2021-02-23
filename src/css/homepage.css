@@ -467,7 +467,7 @@ header {
   align-items: flex-start;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 135px;
+  margin-bottom: 131px;
 }
 @media (min-width: 1440px) {
   header {
@@ -501,7 +501,7 @@ header {
     box-sizing: border-box;
     width: 87.2%;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 137px;
   }
 }
 
@@ -613,6 +613,19 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 200px;
+}
+@media (max-width: 1100px) {
+  .collection-div {
+    height: 927px;
+    margin-bottom: 143px;
+  }
+}
+@media (max-width: 600px) {
+  .collection-div {
+    height: 1321px;
+    margin-bottom: 120px;
+  }
 }
 .collection-div .top-div {
   width: 100%;
@@ -623,6 +636,28 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+@media (max-width: 1100px) {
+  .collection-div .top-div {
+    height: 118px;
+  }
+}
+@media (max-width: 950px) {
+  .collection-div .top-div {
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .collection-div .top-div {
+    height: 118px;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 600px) {
+  .collection-div .top-div {
+    height: 80px;
+    margin-bottom: 47px;
+  }
 }
 .collection-div .top-div .inside-top-div {
   background: -webkit-linear-gradient(270deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
@@ -654,18 +689,25 @@ header {
 }
 @media (max-width: 800px) {
   .collection-div .top-div h1 {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 .collection-div .coffee-types-div {
   width: 100%;
   max-width: 1111px;
   height: 398.55px;
-  margin-top: -45px;
+  margin-top: -48px;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 1100px) {
+  .collection-div .coffee-types-div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -45px;
+  }
 }
 .collection-div .coffee-types-div .coffee-type {
   display: flex;
@@ -673,21 +715,92 @@ header {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 1100px) {
+  .collection-div .coffee-types-div .coffee-type {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    height: 193px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .collection-div .coffee-types-div .coffee-type {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .collection-div .coffee-types-div .coffee-type {
+    flex-direction: column;
+    margin-bottom: 29px;
+    height: 273px;
+  }
+}
 .collection-div .coffee-types-div .coffee-type .img-box {
   width: 255px;
   height: 193px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
-  margin-right: 2.52025%;
+  margin-bottom: 47px;
+}
+@media (max-width: 1100px) {
+  .collection-div .coffee-types-div .coffee-type .img-box {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .collection-div .coffee-types-div .coffee-type .img-box {
+    width: 200.29px;
+    height: 151px;
+  }
 }
 .collection-div .coffee-types-div .coffee-type .img-box .coffee-bag-img {
   width: 90%;
   height: 90%;
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .collection-div .coffee-types-div .coffee-type .img-box .coffee-bag-img {
+    margin-right: 7px;
+  }
 }
 .collection-div .coffee-types-div .coffee-type .coffee-description {
   width: 255px;
   height: 134px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #333D4B;
+}
+@media (max-width: 1100px) {
+  .collection-div .coffee-types-div .coffee-type .coffee-description {
+    text-align: left;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    width: 282px;
+    height: 106px;
+  }
+}
+@media (max-width: 600px) {
+  .collection-div .coffee-types-div .coffee-type .coffee-description {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .collection-div .coffee-types-div .coffee-type .coffee-description body {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1100px) {
+  .collection-div .coffee-types-div .coffee-type:last-of-type {
+    margin-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
