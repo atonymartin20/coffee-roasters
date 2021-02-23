@@ -62,7 +62,7 @@ header {
         box-sizing: border-box;
         width: 87.2%;
         text-align: center;
-        margin-bottom: 120px;
+        margin-bottom: 137px;
     }
 }
 
@@ -172,12 +172,12 @@ header {
 
     @media (max-width: 1100px) {
         height: 927px;
-        // background-color: purple;
         margin-bottom: 143px;
     }
 
     @media (max-width: 600px) {
-        flex-direction: column;
+        height: 1321px;
+        margin-bottom: 120px;
     }
 
     .top-div {
@@ -199,6 +199,11 @@ header {
         @media (max-width: $tablet-breakpoint) {
             height: 118px;
             opacity: 0.5;
+        }
+
+        @media (max-width: 600px) {
+            height: 80px;
+            margin-bottom: 47px;
         }
 
         .inside-top-div {
@@ -227,7 +232,7 @@ header {
             }
 
             @media (max-width: 800px) {
-                margin-bottom: 20px;
+                margin-bottom: 23px;
             }
         }
 
@@ -253,10 +258,8 @@ header {
 
             @media (max-width: 1100px) {
                 flex-direction: row;
-                // background-color: turquoise;
                 width: 90%;
                 justify-content: space-evenly;
-                // align-items: flex-start;
                 height: 193px;
                 margin-bottom: 25px;
             }
@@ -267,6 +270,8 @@ header {
 
             @media (max-width: 600px) {
                 flex-direction: column;
+                margin-bottom: 29px;
+                height: 273px;
             }
 
             .img-box {
@@ -274,10 +279,14 @@ header {
                 height: 193px;
                 @include flex(flex-end, flex-start);
                 margin-bottom: 47px;
-                // background-color: yellow;
 
                 @media (max-width: 1100px) {
                     margin-bottom: 0px;
+                }
+
+                @media (max-width: 600px) {
+                    width: 200.29px;
+                    height: 151px;
                 }
     
                 .coffee-bag-img {
@@ -302,11 +311,15 @@ header {
                 @media (max-width: 1100px) {
                     text-align: left;
                     align-items: flex-start;
-                    // background-color: red;
                     margin-bottom: 30px;
                     padding-left: 5px;
                     width: 282px;
                     height: 106px;
+                }
+
+                @media (max-width: 600px) {
+                    text-align: center;
+                    align-items: center;
                 }
 
                 body {
