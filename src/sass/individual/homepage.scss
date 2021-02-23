@@ -36,7 +36,7 @@ header {
     @include flex(center, flex-start);
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 135px;
+    margin-bottom: 131px;
 
     @media (min-width: $desktop-breakpoint) {
         min-width: 1280px;
@@ -168,6 +168,13 @@ header {
     margin: 0 auto;
     @include flex(flex-start, center);
     flex-direction: column;
+    margin-bottom: 200px;
+
+    @media (max-width: 1100px) {
+        height: 927px;
+        // background-color: purple;
+        margin-bottom: 143px;
+    }
 
     .top-div {
         width: 100%;
@@ -176,6 +183,19 @@ header {
         mix-blend-mode: normal;
         opacity: 1.0;
         @include flex(center, flex-end);
+
+        @media (max-width: 1100px) {
+            height: 118px;
+        }
+
+        @media (max-width: 950px) {
+            height: 130px;
+        }
+
+        @media (max-width: $tablet-breakpoint) {
+            height: 118px;
+            opacity: 0.5;
+        }
 
         .inside-top-div {
             background: -webkit-linear-gradient(270deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
@@ -213,272 +233,82 @@ header {
         width: 100%;
         max-width: 1111px;
         height: 398.55px;
-        margin-top: -45px;
+        margin-top: -48px;
         z-index: 1;
-        @include flex(center, flex-start);
+        @include flex(space-between, flex-start);
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -45px;
+        }
 
         .coffee-type {
             @include flex(space-between, center);
             flex-direction: column;
 
+            @media (max-width: 1100px) {
+                flex-direction: row;
+                // background-color: turquoise;
+                width: 90%;
+                justify-content: space-evenly;
+                // align-items: flex-start;
+                height: 193px;
+                margin-bottom: 25px;
+            }
+
             .img-box {
                 width: 255px;
                 height: 193px;
-                @include flex(center, flex-start);
-                margin-right: 2.52025%;
+                @include flex(flex-end, flex-start);
+                margin-bottom: 47px;
+                // background-color: yellow;
+
+                @media (max-width: 1100px) {
+                    margin-bottom: 0px;
+                }
     
                 .coffee-bag-img {
                     width: 90%;
                     height: 90%;
+                    margin-right: 5px;
+
+                    @media (max-width: $tablet-breakpoint) {
+                        margin-right: 7px;
+                    }
                 }
             }
 
             .coffee-description {
                 width: 255px;
                 height: 134px;
+                text-align: center;
+                @include flex(space-between, center);
+                flex-direction: column;
+                color: $dark-grey-blue;
+
+                @media (max-width: 1100px) {
+                    text-align: left;
+                    align-items: flex-start;
+                    // background-color: red;
+                    margin-bottom: 30px;
+                    padding-left: 5px;
+                    width: 282px;
+                }
+
+                body {
+                    @media (max-width: $tablet-breakpoint) {
+                        font-size: 1.5rem;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        .coffee-type:last-of-type {
+            @media (max-width: 1100px) {
+                margin-bottom: 0px;
             }
         }
     }
 }
-
-// /* Group 4 */
-
-// width: 255px;
-// height: 134px;
-// left: 165px;
-// top: 1239.55px;
-
-
-
-// /* Gran Espresso */
-
-// position: absolute;
-// height: 32px;
-// left: 0%;
-// right: 0%;
-// top: calc(50% - 32px/2 - 51px);
-
-// font-family: Fraunces 9pt;
-// font-style: normal;
-// font-weight: 900;
-// font-size: 24px;
-// line-height: 32px;
-// /* identical to box height, or 133% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Light and flavorful */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 41.79%;
-// bottom: 0%;
-
-// font-family: Barlow;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 16px;
-// line-height: 26px;
-// /* or 162% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Group 4 Copy */
-
-// position: absolute;
-// width: 255px;
-// height: 134px;
-// left: 450px;
-// top: 1239.55px;
-
-
-
-// /* Planalto */
-
-// position: absolute;
-// height: 32px;
-// left: 0%;
-// right: 0%;
-// top: calc(50% - 32px/2 - 51px);
-
-// font-family: Fraunces 9pt;
-// font-style: normal;
-// font-weight: 900;
-// font-size: 24px;
-// line-height: 32px;
-// /* identical to box height, or 133% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Brazilian dark roast */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 41.79%;
-// bottom: 0%;
-
-// font-family: Barlow;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 16px;
-// line-height: 26px;
-// /* or 162% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Group 4 Copy 2 */
-
-// position: absolute;
-// width: 255px;
-// height: 134px;
-// left: 735px;
-// top: 1239.55px;
-
-
-
-// /* Piccollo */
-
-// position: absolute;
-// height: 32px;
-// left: 0%;
-// right: 0%;
-// top: calc(50% - 32px/2 - 51px);
-
-// font-family: Fraunces 9pt;
-// font-style: normal;
-// font-weight: 900;
-// font-size: 24px;
-// line-height: 32px;
-// /* identical to box height, or 133% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Mild and smooth blen */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 41.79%;
-// bottom: 0%;
-
-// font-family: Barlow;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 16px;
-// line-height: 26px;
-// /* or 162% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Group 4 Copy 3 */
-
-// position: absolute;
-// width: 255px;
-// height: 134px;
-// left: 1020px;
-// top: 1239.55px;
-
-
-
-// /* Danche */
-
-// position: absolute;
-// height: 32px;
-// left: 0%;
-// right: 0%;
-// top: calc(50% - 32px/2 - 51px);
-
-// font-family: Fraunces 9pt;
-// font-style: normal;
-// font-weight: 900;
-// font-size: 24px;
-// line-height: 32px;
-// /* identical to box height, or 133% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* Ethiopian hand-harve */
-
-// position: absolute;
-// left: 0%;
-// right: 0%;
-// top: 41.79%;
-// bottom: 0%;
-
-// font-family: Barlow;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 16px;
-// line-height: 26px;
-// /* or 162% */
-// text-align: center;
-
-// color: #333D4B;
-
-
-
-// /* kopi1 copy */
-
-// position: absolute;
-// width: 255px;
-// height: 193px;
-// left: 165px;
-// top: 975px;
-
-// background: url(Image.png);
-
-
-// /* kopi4 */
-
-// position: absolute;
-// width: 234.82px;
-// height: 177.48px;
-// left: 1041.18px;
-// top: 990.52px;
-
-// background: url(Image.png);
-
-
-// /* kopi3 */
-
-// position: absolute;
-// width: 256px;
-// height: 193px;
-// left: 734px;
-// top: 975px;
-
-// background: url(Image.png);
-
-
-// /* kopi2 */
-
-// position: absolute;
-// width: 256px;
-// height: 193px;
-// left: 450px;
-// top: 975px;
-
-// background: url(Image.png);
