@@ -23,8 +23,8 @@ class Collection extends React.Component {
                             <img src={GranEspressoCoffee} class='coffee-bag-img' />
                         </div>
                         <div class='coffee-description'>
-                            <h3>Gran Espresso</h3>
-                            Light and flavorful blend with cocoa and black pepper for an intense experience
+                            <h4>Gran Espresso</h4>
+                            <body>Light and flavorful blend with cocoa and black pepper for an intense experience.</body>
                         </div>
                     </div>
 
@@ -33,8 +33,8 @@ class Collection extends React.Component {
                             <img src={PlanaltoCoffee} class='coffee-bag-img' />
                         </div>
                         <div class='coffee-description'>
-                            <h3>Planalto</h3>
-                            Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
+                            <h4>Planalto</h4>
+                            <body>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</body>
                         </div>
                     </div>
 
@@ -43,8 +43,8 @@ class Collection extends React.Component {
                             <img src={PiccolloCoffee} class='coffee-bag-img' />
                         </div>
                         <div class='coffee-description'>
-                            <h3>Piccollo</h3>
-                            Mild and smooth blend featuring notes of toasted almond and dried cherry
+                            <h4>Piccollo</h4>
+                            <body>Mild and smooth blend featuring notes of toasted almond and dried cherry.</body>
                         </div>
                     </div>
 
@@ -53,8 +53,8 @@ class Collection extends React.Component {
                             <img src={DancheCoffee} class='coffee-bag-img' />
                         </div>
                         <div class='coffee-description'>
-                            <h3>Danche</h3>
-                            Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+                            <h4>Danche</h4>
+                            <body>Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</body>
                         </div>
                     </div>
                 </div>                
