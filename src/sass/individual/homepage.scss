@@ -175,9 +175,13 @@ header {
         margin-bottom: 143px;
     }
 
+    @media (max-width: $tablet-breakpoint) {
+        margin-bottom: 133px;
+    }
+
     @media (max-width: 600px) {
         height: 1321px;
-        margin-bottom: 120px;
+        margin-bottom: 30px;
     }
 
     .top-div {
@@ -335,6 +339,169 @@ header {
             @media (max-width: 1100px) {
                 margin-bottom: 0px;
             }
+        }
+    }
+}
+
+// Choose Us
+.choose-us-div {
+    width: 100%;
+    max-width: 1280px;
+    height: 728px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    @media (max-width: $tablet-breakpoint) {
+        height: 863px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        width: 87.2%;
+        height: 1499px;
+    }
+
+    .choose-us-top-div {
+        width: 100%;
+        max-width: 1280px;
+        height: 577px;
+        border-radius: 10px;
+        background: $dark-background;
+        padding-top: 100px;
+        @include flex(center, flex-start);
+
+        @media (max-width: $tablet-breakpoint) {
+            height: 573px;
+            padding-top: 57px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            height: 902px;
+        }
+    }
+
+    .choose-us-top-text-div {
+        width: 540px;
+        height: 160px;
+        @include flex(space-between, center);
+        flex-direction: column;
+
+        @media (max-width: $tablet-breakpoint) {
+            width: 100%;
+            max-width: 540px;
+            height: 149px;
+        }
+
+        @media (max-width: 600px) {
+            height: 185px;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: 555px) {
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: 420px) {
+            height: 200px;
+            padding-bottom: 0px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            margin: 0px 7.334%;
+            height: 177px;
+        }
+
+        @media (max-width: 361px) {
+            height: 195px;
+        }
+
+        h2 {
+            height: 48px;
+            text-align: center;
+            color: $light-cream;
+
+            @media (max-width: $tablet-breakpoint) {
+                font-size: 3.2rem;
+            }
+
+            @media (max-width: $mobile-breakpoint) {
+                height: 28px;
+                font-size: 2.8rem;
+                line-height: 28px;
+            }
+        }
+
+        body {
+            text-align: center;
+            color: $light-cream;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            padding: 0px 6px;
+
+            @media (max-width: $tablet-breakpoint) {
+                font-size: 1.5rem;
+                line-height: 25px;
+                padding: 0px 22px;
+            }
+
+            @media (max-width: $mobile-breakpoint) {
+                padding: 0px 0px;
+            }
+        }
+    }
+}
+
+
+
+// How It Works
+
+// Create Your Plan Button
+.create-your-plan-div {
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 200px;
+
+    @media(max-width: $tablet-breakpoint) {
+        display: none;
+    }
+}
+
+.create-your-plan-button {
+    width: 217px;
+    height: 56px;
+    background: $dark-cyan;
+    border-radius: 6px;
+    border: 0px;
+    color: $light-cream;
+    font-family: $fraunces;
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-style: normal;
+    margin-left: 15%;
+
+    @media (max-width: 1400px) {
+        margin-left: 7%;
+    }
+
+    a {
+        color: $light-cream;
+        cursor: pointer;
+        text-align: center;
+        text-transform: none;
+        &:visited {
+            text-decoration: none;
+            color: $light-cream;
+        }
+        &:link {
+            text-decoration: none;
+            color: $light-cream;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $light-cream;
+        }
+        &:active {
+            text-decoration: none;
+            color: $light-cream;
         }
     }
 }
