@@ -349,12 +349,12 @@ header {
     max-width: 1280px;
     height: 728px;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 187px;
     @include flex(flex-start, center);
     flex-direction: column;
 
     @media (max-width: 975px) {
-        height: 863px;
+        height: 913px;
     }
 
     @media (max-width: $tablet-breakpoint) {
@@ -363,7 +363,11 @@ header {
     }
 
     @media (max-width: 550px) {
-        height: 1140px;
+        height: 1010px;
+    }
+
+    @media (max-width: 450px) {
+        height: 1110px;
     }
 
     @media (max-width: $mobile-breakpoint) {
@@ -383,6 +387,14 @@ header {
         @media (max-width: $tablet-breakpoint) {
             height: 573px;
             padding-top: 57px;
+        }
+
+        @media (max-width: 550px) {
+            height: 650px;
+        }
+
+        @media (max-width: 450px) {
+            height: 750px;
         }
 
         @media (max-width: $mobile-breakpoint) {
@@ -465,26 +477,33 @@ header {
         max-width: 1110px;
         height: 382px;
         @include flex(space-between, center);
-        margin-top: -247px;
+        margin-top: -231px;
 
         @media (max-width: 975px) {
             flex-direction: column;
             height: 588px;
-            margin-top: -293px;
+            margin-top: -253px;
         }
 
-        @media (max-width: 975px) {
-            height: 860px;
+        @media (max-width: $tablet-breakpoint) {
+            height: 588px;
+            margin-top: -298px;
+        }
+
+        @media (max-width: 550px) {
+            height: 730px;
+            margin-top: -367px;
+        }
+
+        @media (max-width: 450px) {
+            height: 865px;
+            margin-top: -417px;
         }
 
         @media (max-width: $mobile-breakpoint) {
-            margin-top: -604px;
             height: 1194px;
+            margin-top: -604px;
         }
-
-        // @media (max-width: 361px) {
-        //     height: 195px;
-        // }
 
         .green-container-div {
             width: 350px;
@@ -684,10 +703,7 @@ header {
     }
 }
 
-
-
 // How It Works
-
 
 // Create Your Plan Button
 .create-your-plan-div {
