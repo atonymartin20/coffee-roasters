@@ -704,6 +704,126 @@ header {
 }
 
 // How It Works
+.how-it-works-div {
+    width: 100%;
+    max-width: 1045px;
+    height: 565px;
+    margin: 0 auto;
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    @media (max-width: 900px) {
+        height: 622px;
+    }
+
+
+    h4 {
+        height: 32px;
+        color: $grey;
+    }
+
+    .how-it-works-large-container-div {
+        width: 100%;
+        height: 453px;
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+
+        .horizontal-line-div {
+            width: 76%;
+            border: 1px solid $pale-orange;
+            margin-top: 15px;
+            @include flex(space-between, center);
+            height: 2px;
+
+            @media(max-width: $tablet-breakpoint) {
+                width: 72.5%;
+            }
+
+            @media(max-width: 650px) {
+                display: none;
+            }
+
+            .circle-div {
+                background: $light-cream;
+                border: 2px solid $dark-cyan;
+                box-sizing: border-box;
+                width: 31px;
+                height: 31px;
+                border-radius: 50%;
+            }
+        }
+
+        .how-it-works-box-container-div {
+            @include flex(space-between, center);
+
+            .how-it-works-box-div {
+                @include flex(space-between, flex-start);
+                flex-direction: column;
+                width: 27.274%;
+                height: 355px;
+
+                @media (max-width: 900px) {
+                    height: 368px;
+                    width: 30%;
+                }
+    
+                h1 {
+                    height: 72px;
+                    color: $pale-orange;
+                }
+    
+                h3 {
+                    width: 255px;
+                    height: 73px;
+                    color: $dark-grey-blue;
+                }
+    
+                body {
+                    color: $dark-grey-blue;
+                }
+            }
+        }
+    }
+    
+    button {
+        display: none;
+        width: 217px;
+        height: 56px;
+        background: $dark-cyan;
+        border-radius: 6px;
+        border: 0px;
+        color: $light-cream;
+        font-family: $fraunces;
+        font-size: 1.8rem;
+        line-height: 25px;
+        font-style: normal;
+        margin-left: 15%;
+
+        a {
+            color: $light-cream;
+            cursor: pointer;
+            text-align: center;
+            text-transform: none;
+            &:visited {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:link {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:active {
+                text-decoration: none;
+                color: $light-cream;
+            }
+        }
+    }
+}
 
 // Create Your Plan Button
 .create-your-plan-div {
