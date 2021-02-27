@@ -1,0 +1,136 @@
+.about-outside-div {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 5.556%;
+    margin: 0 auto;
+    background-color: white;
+    @include flex(center, flex-start);
+    flex-direction: column;
+
+    @media (min-width: $desktop-breakpoint) {
+        min-width: 1440px;
+        padding: 0px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 0 5.14323%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding: 0px;
+    }
+}
+
+// HEADER
+.about-header {
+    width: 100%;
+    max-width: 1280px;
+    height: 450px;
+    background: #A2A2A2;
+    border-radius: 10px;
+    background-image: about-image('desktop', 'image-hero-whitecup.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5.8%;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 131px;
+    
+    @media (min-width: $desktop-breakpoint) {
+        min-width: 1280px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        height: 400px;
+        background-image: about-image('tablet', 'image-hero-whitecup.jpg');
+        padding: 8.3277%;
+        margin-bottom: 142px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 8% 6.484375%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        background-image: about-image('mobile', 'image-hero-whitecup.jpg');
+        @include flex(center, center);
+        margin: 0px 6.4%;
+        padding: 0px;
+        box-sizing: border-box;
+        width: 87.2%;
+        text-align: center;
+        margin-bottom: 137px;
+    }
+}
+
+.header-text-container {
+    width: 445px;
+    height: 176px;
+
+    @media (max-width: 1000px) {
+        width: 345px;
+        height: 240px;
+    }
+
+    @media (max-width: 800px) {
+        width: 310px;
+        height: 225px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        width: 398px;
+        height: 164px;
+    }
+
+    @media (max-width: 700px) {
+        width: 340px;
+        height: 180px;
+    }
+    
+    @media (max-width: 550px) {
+        width: 300px;
+        height: 210px;
+    }
+
+    @media (max-width: 400px) {
+        width: 265px;
+        height: 220px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        width: 279px;
+        height: 202px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: $light-cream;
+        height: 48px;
+
+        @media (max-width: $tablet-breakpoint) {
+            height: 40px;
+            font-size: 3.2rem;
+            line-height: 40px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            height: 28px;
+            font-size: 2.8rem;
+            line-height: 28px;
+        }
+    }
+
+    body {
+        color: $light-cream;
+        width: 100%;
+
+        @media (max-width: $tablet-breakpoint) {
+            font-size: 1.5rem;
+            line-height: 25px;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
