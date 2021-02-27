@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 7.2rem;
+  font-family: "Fraunces", serif;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "Fraunces", serif;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-family: "Fraunces", serif;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-family: "Fraunces", serif;
+  line-height: 32px;
+}
+
+nav {
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.title-alt {
+  font-size: 15rem;
+  font-family: "Fraunces", serif;
+  line-height: 72px;
+  text-transform: lowercase;
+}
+@media (max-width: 1200px) {
+  .title-alt {
+    font-size: 12rem;
+  }
+}
+@media (max-width: 975px) {
+  .title-alt {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .title-alt {
+    font-size: 9.6rem;
+  }
+}
+@media (max-width: 765px) {
+  .title-alt {
+    font-size: 7.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .title-alt {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .title-alt {
+    font-size: 4rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  height: 33px;
+  margin: 40px auto;
+}
+@media (min-width: 1440px) {
+  .navbar {
+    min-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: 26px;
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    height: 18px;
+    padding: 0px 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.nav-spacer {
+  width: 100%;
+  max-width: 1280px;
+  height: 33px;
+  margin: 40px auto;
+}
+@media (min-width: 1440px) {
+  .nav-spacer {
+    min-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-spacer {
+    height: 26px;
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 375px) {
+  .nav-spacer {
+    height: 18px;
+    padding: 0px 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 375px) {
+  .close {
+    width: 14px;
+    height: 13px;
+  }
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 375px) {
+  .hamburger {
+    width: 16px;
+    height: 15px;
+  }
+}
+@media (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+a {
+  color: #83888F;
+  cursor: pointer;
+  margin-left: 31.4px;
+  text-transform: uppercase;
+}
+a:visited {
+  text-decoration: none;
+  color: #83888F;
+}
+a:link {
+  text-decoration: none;
+  color: #83888F;
+}
+a:hover {
+  text-decoration: none;
+  color: #83888F;
+}
+a:active {
+  text-decoration: none;
+  color: #83888F;
+}
+
+a:first-of-type {
+  margin-left: 0px;
+}
+
+@media (max-width: 600px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-logo {
+    width: 163px;
+    height: 18px;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5.556%;
+}
+@media (max-width: 768px) {
+  .dropdown {
+    padding: 0 5.14323%;
+  }
+}
+@media (max-width: 375px) {
+  .dropdown {
+    padding: 0px;
+  }
+}
+
+.dropdown-links-container {
+  position: absolute;
+  width: 100%;
+  height: 577px;
+  left: 0px;
+  top: 95px;
+  padding-top: 35px;
+  background: linear-gradient(to top, rgba(254, 252, 247, 0.504981) 10%, #FEFCF7 52%);
+}
+
+.dropdown-link {
+  color: #333D4B;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  text-transform: none;
+}
+
+footer {
+  width: 100%;
+  max-width: 1280px;
+  height: 120px;
+  background-color: #2C343E;
+  margin-bottom: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 6.640625%;
+}
+@media (min-width: 1440px) {
+  footer {
+    min-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 88px;
+  }
+}
+@media (max-width: 950px) {
+  footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 270px;
+    margin-bottom: 72px;
+    padding: 54px 54px 45px 54px;
+  }
+}
+@media (max-width: 460px) {
+  footer {
+    padding: 54px 0px 45px 0px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    height: 346px;
+    margin: 0px 6.4% 72px 6.4%;
+    width: 87.2%;
+  }
+}
+footer nav {
+  margin-left: 9.4%;
+  margin-right: auto;
+}
+@media (max-width: 950px) {
+  footer nav {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  footer nav {
+    padding-left: 4.5%;
+    margin-bottom: 31px;
+  }
+}
+@media (max-width: 375px) {
+  footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0px;
+    margin-top: 27px;
+  }
+}
+@media (max-width: 375px) {
+  footer nav a {
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+}
+footer .social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  footer .social-div {
+    margin-bottom: 8px;
+  }
+}
+footer .social-logo {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  footer .social-logo {
+    margin-left: 24px;
+  }
+}
+footer .social-logo:first-of-type {
+  margin-left: 0px;
+}
+footer .twitter-logo {
+  width: 24px;
+  height: 19.5px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  footer .twitter-logo {
+    margin-left: 24px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-logo {
+    width: 217.85px;
+    height: 24px;
+  }
+}
+
+.about-outside-div {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 5.556%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .about-outside-div {
+    min-width: 1440px;
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .about-outside-div {
+    padding: 0 5.14323%;
+  }
+}
+@media (max-width: 375px) {
+  .about-outside-div {
+    padding: 0px;
+  }
+}
+
+.about-header {
+  width: 100%;
+  max-width: 1280px;
+  height: 450px;
+  background: #A2A2A2;
+  border-radius: 10px;
+  background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5.8%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 165px;
+}
+@media (min-width: 1440px) {
+  .about-header {
+    min-width: 1280px;
+  }
+}
+@media (max-width: 768px) {
+  .about-header {
+    height: 400px;
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+    padding: 8.3277%;
+    margin-bottom: 143px;
+  }
+}
+@media (max-width: 500px) {
+  .about-header {
+    padding: 8% 6.484375%;
+  }
+}
+@media (max-width: 375px) {
+  .about-header {
+    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 6.4%;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 87.2%;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+}
+
+.header-text-container {
+  width: 445px;
+  height: 176px;
+}
+@media (max-width: 1000px) {
+  .header-text-container {
+    width: 345px;
+    height: 240px;
+  }
+}
+@media (max-width: 800px) {
+  .header-text-container {
+    width: 310px;
+    height: 225px;
+  }
+}
+@media (max-width: 768px) {
+  .header-text-container {
+    width: 398px;
+    height: 164px;
+  }
+}
+@media (max-width: 700px) {
+  .header-text-container {
+    width: 340px;
+    height: 180px;
+  }
+}
+@media (max-width: 550px) {
+  .header-text-container {
+    width: 300px;
+    height: 210px;
+  }
+}
+@media (max-width: 400px) {
+  .header-text-container {
+    width: 265px;
+    height: 220px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-container {
+    width: 279px;
+    height: 202px;
+    margin-top: 20px;
+  }
+}
+.header-text-container h2 {
+  color: #FEFCF7;
+  height: 48px;
+}
+@media (max-width: 768px) {
+  .header-text-container h2 {
+    height: 40px;
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-container h2 {
+    height: 28px;
+    font-size: 2.8rem;
+    line-height: 28px;
+  }
+}
+.header-text-container body {
+  color: #FEFCF7;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header-text-container body {
+    font-size: 1.5rem;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

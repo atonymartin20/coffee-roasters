@@ -36,7 +36,7 @@
     @include flex(center, flex-start);
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 131px;
+    margin-bottom: 165px;
     
     @media (min-width: $desktop-breakpoint) {
         min-width: 1280px;
@@ -46,7 +46,7 @@
         height: 400px;
         background-image: about-image('tablet', 'image-hero-whitecup.jpg');
         padding: 8.3277%;
-        margin-bottom: 142px;
+        margin-bottom: 143px;
     }
 
     @media (max-width: 500px) {
@@ -61,7 +61,7 @@
         box-sizing: border-box;
         width: 87.2%;
         text-align: center;
-        margin-bottom: 137px;
+        margin-bottom: 120px;
     }
 }
 
