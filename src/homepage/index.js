@@ -13,11 +13,11 @@ class Homepage extends React.Component {
         return(
             <div class='homepage-outside-div'>
 				<Navbar />
-					<Header />
-					<Collection />
-					<ChooseUs />
-					<HowItWorks />
-					<CreateYourPlanButton />
+				<Header />
+				<Collection />
+				<ChooseUs />
+				<HowItWorks />
+				<CreateYourPlanButton />
 				<Footer />
             </div>
         )

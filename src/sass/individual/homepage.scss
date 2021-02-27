@@ -22,7 +22,7 @@
 }
 
 // HEADER
-header {
+.homepage-header {
     background: #A2A2A2;
     border-radius: 10px;
     background-image: home-image('desktop', 'image-hero-coffeepress.jpg');
@@ -722,6 +722,15 @@ header {
         margin-bottom: 145px;
     }
 
+    @media (max-width: 650px) {
+        height: 1116px;
+        align-items: center;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        width: 87.2%;
+    }
+
     h4 {
         height: 32px;
         color: $grey;
@@ -735,6 +744,11 @@ header {
 
         @media (max-width: $tablet-breakpoint) {
             height: 537px;
+        }
+
+        @media (max-width: 650px) {
+            height: 1005px;
+            align-items: center;
         }
 
         .horizontal-line-div {
@@ -770,6 +784,11 @@ header {
             width: 100%;
             @include flex(space-between, center);
 
+            @media (max-width: 650px) {
+                flex-direction: column;
+                height: 850px;
+            }
+
             .how-it-works-box-div {
                 @include flex(space-between, flex-start);
                 flex-direction: column;
@@ -787,10 +806,29 @@ header {
                     padding-right: 12.8px;
                 }
 
+                @media (max-width: 700px) {
+                    padding-right: 8px;
+                }
+
+                @media (max-width: 650px) {
+                    width: 85%;
+                    padding-right: 0px;
+                    height: 252px;
+                    align-items: center;
+                }
+
+                @media (max-width: $mobile-breakpoint) {
+                    width: 100%;
+                    height: 253px;
+                }
+
                 h1 {
                     height: 72px;
                     color: $pale-orange;
                     margin-top: 8px;
+                    @media (max-width: 650px) {
+                        margin-top: 0px;
+                    }
                 }
     
                 h3 {
@@ -807,6 +845,10 @@ header {
                         font-size: 2.8rem;
                         line-height: 32px;
                         margin-top: 6px;
+                    }
+
+                    @media (max-width: 650px) {
+                        text-align: center;
                     }
                 }
     
@@ -828,6 +870,14 @@ header {
                         font-size: 1.5rem;
                         line-height: 25px;
                     }
+
+                    @media (max-width: 650px) {
+                        height: auto;
+                    }
+
+                    @media (max-width: $mobile-breakpoint) {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -835,11 +885,31 @@ header {
                 @media (max-width: $tablet-breakpoint) {
                     padding-right: 17px;
                 }
+
+                @media (max-width: 700px) {
+                    padding-right: 8px;
+                }
+
+                @media (max-width: 650px) {
+                    padding-right: 0px;
+                }
             }
 
             .how-it-works-box-div:nth-of-type(3) {
                 @media (max-width: $tablet-breakpoint) {
                     padding-right: 19px;
+                }
+
+                @media (max-width: 700px) {
+                    padding-right: 8px;
+                }
+
+                @media (max-width: 650px) {
+                    padding-right: 0px;
+                }
+
+                @media (max-width: $mobile-breakpoint) {
+                    padding-right: 10px;
                 }
             }
         }
@@ -860,6 +930,10 @@ header {
 
         @media (max-width: $tablet-breakpoint) {
             display: block;
+        }
+
+        @media (max-width: 650px) {
+            margin: 0 auto;
         }
 
         a {

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component {
     render() {
         return(
-            <header>
+            <header class='homepage-header'>
                 <div class='header-text-container'>
                     <h1>Great coffee made simple.</h1>
 
