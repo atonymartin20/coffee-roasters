@@ -5,7 +5,7 @@ class Header extends React.Component {
     render() {
         return(
             <header class='homepage-header'>
-                <div class='header-text-container'>
+                <div class='homepage-header-text-container'>
                     <h1>Great coffee made simple.</h1>
 
                     <body>

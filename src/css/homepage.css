@@ -505,43 +505,43 @@ footer .twitter-logo {
   }
 }
 
-.header-text-container {
+.homepage-header-text-container {
   width: 493px;
   height: 367px;
 }
 @media (max-width: 768px) {
-  .header-text-container {
+  .homepage-header-text-container {
     width: 398px;
     height: 292px;
   }
 }
 @media (max-width: 500px) {
-  .header-text-container {
+  .homepage-header-text-container {
     width: 298px;
   }
 }
 @media (max-width: 375px) {
-  .header-text-container {
+  .homepage-header-text-container {
     width: 279px;
     height: 301px;
   }
 }
-.header-text-container h1 {
+.homepage-header-text-container h1 {
   color: #FEFCF7;
 }
 @media (max-width: 768px) {
-  .header-text-container h1 {
+  .homepage-header-text-container h1 {
     font-size: 4.8rem;
     line-height: 48px;
   }
 }
 @media (max-width: 375px) {
-  .header-text-container h1 {
+  .homepage-header-text-container h1 {
     font-size: 4rem;
     line-height: 40px;
   }
 }
-.header-text-container body {
+.homepage-header-text-container body {
   width: 440px;
   color: #FEFCF7;
   mix-blend-mode: normal;
@@ -550,7 +550,7 @@ footer .twitter-logo {
   margin-bottom: 55px;
 }
 @media (max-width: 768px) {
-  .header-text-container body {
+  .homepage-header-text-container body {
     width: 398px;
     font-size: 1.5rem;
     line-height: 25px;
@@ -560,16 +560,16 @@ footer .twitter-logo {
   }
 }
 @media (max-width: 500px) {
-  .header-text-container body {
+  .homepage-header-text-container body {
     width: 298px;
   }
 }
 @media (max-width: 375px) {
-  .header-text-container body {
+  .homepage-header-text-container body {
     width: 279px;
   }
 }
-.header-text-container button {
+.homepage-header-text-container button {
   width: 217px;
   height: 56px;
   background: #0E8784;
@@ -581,25 +581,25 @@ footer .twitter-logo {
   line-height: 25px;
   font-style: normal;
 }
-.header-text-container button a {
+.homepage-header-text-container button a {
   color: #FEFCF7;
   cursor: pointer;
   text-align: center;
   text-transform: none;
 }
-.header-text-container button a:visited {
+.homepage-header-text-container button a:visited {
   text-decoration: none;
   color: #FEFCF7;
 }
-.header-text-container button a:link {
+.homepage-header-text-container button a:link {
   text-decoration: none;
   color: #FEFCF7;
 }
-.header-text-container button a:hover {
+.homepage-header-text-container button a:hover {
   text-decoration: none;
   color: #FEFCF7;
 }
-.header-text-container button a:active {
+.homepage-header-text-container button a:active {
   text-decoration: none;
   color: #FEFCF7;
 }
