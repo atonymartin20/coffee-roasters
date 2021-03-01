@@ -597,3 +597,60 @@
 
 
 // Headquarters
+.headquarters-div {
+    width: 100%;
+    max-width: 1045px;
+    height: 366px;
+    margin: 0 auto;
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+    margin-bottom: 167px;
+
+    h4 {
+        height: 32px;
+        color: $grey;
+    }
+
+    .headquarters-info-div {
+        width: 100%;
+        height: 262px;
+        @include flex(space-between, flex-end);
+
+        .headquarters-info-box-div {
+            width: 285px;
+            height: 262px;
+            @include flex(space-between, flex-start);
+            flex-direction: column;
+
+            .headquarters-uk-icon {
+
+            }
+
+            .headquarters-canada-icon {
+
+            }
+
+            .headquarters-australia-icon {
+
+            }
+
+            .headquarters-info-textbox-div{
+                width: 285px;
+                height: 167px;
+                @include flex(space-between, flex-start);
+                flex-direction: column;
+    
+                h3 {
+                    height: 36px;
+                    color: $dark-grey-blue;
+                }
+    
+                body {
+                    width: 100%;
+                    height: 107px;
+                    color: $dark-grey-blue;
+                }
+            }
+        }
+    }
+}
