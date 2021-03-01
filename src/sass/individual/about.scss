@@ -606,6 +606,11 @@
     flex-direction: column;
     margin-bottom: 167px;
 
+    @media (max-width: $tablet-breakpoint) {
+        margin-bottom: 143px;
+
+    }
+
     h4 {
         height: 32px;
         color: $grey;
@@ -616,33 +621,59 @@
         height: 262px;
         @include flex(space-between, flex-end);
 
+        @media (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .headquarters-info-box-div {
             width: 285px;
             height: 262px;
             @include flex(space-between, flex-start);
             flex-direction: column;
 
-            .headquarters-uk-icon {
-
+            @media (max-width: 975px) {
+                width: 250px;
             }
 
-            .headquarters-canada-icon {
-
+            @media (max-width: 875px) {
+                width: 220px;
             }
 
-            .headquarters-australia-icon {
+            @media (max-width: $tablet-breakpoint) {
+                width: 223px;
+            }
 
+            @media (max-width: 725px) {
+                width: 175px;
             }
 
             .headquarters-info-textbox-div{
-                width: 285px;
+                width: 100%;
                 height: 167px;
                 @include flex(space-between, flex-start);
                 flex-direction: column;
+
+                @media (max-width: 725px) {
+                    height: 180px;
+                }
     
                 h3 {
                     height: 36px;
                     color: $dark-grey-blue;
+
+                    @media (max-width: 975px) {
+                        font-size: 2.9rem;
+                        line-height: 32px; 
+                    }
+
+                    @media (max-width: 875px) {
+                        font-size: 2.6rem;
+                    }
+
+                    @media (max-width: $tablet-breakpoint) {
+                        font-size: 2.4rem;
+                    }
                 }
     
                 body {
