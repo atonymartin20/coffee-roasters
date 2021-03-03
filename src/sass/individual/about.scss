@@ -68,6 +68,8 @@
 .about-header-text-container {
     width: 445px;
     height: 176px;
+    @include flex(space-between, flex-start);
+    flex-direction: column;
 
     @media (max-width: 1000px) {
         width: 345px;

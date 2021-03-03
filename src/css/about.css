@@ -505,6 +505,10 @@ footer .twitter-logo {
 .about-header-text-container {
   width: 445px;
   height: 176px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media (max-width: 1000px) {
   .about-header-text-container {
