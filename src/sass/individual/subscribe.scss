@@ -99,7 +99,7 @@
 
     @media (max-width: $tablet-breakpoint) {
         width: 398px;
-        height: 164px;
+        height: 147px;
     }
 
     @media (max-width: 700px) {
@@ -142,9 +142,7 @@
         }
 
         @media (max-width: $tablet-breakpoint) {
-            // height: 40px;
-            // font-size: 3.2rem;
-            // line-height: 40px;
+            font-size: 4.8rem;
         }
 
         @media (max-width: $mobile-breakpoint) {
