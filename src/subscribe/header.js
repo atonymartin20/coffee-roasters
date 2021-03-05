@@ -5,7 +5,7 @@ class Header extends React.Component {
         return(
             <header class='subscribe-header'>
                 <div class='subscribe-header-text-container'>
-                    <h2>Create a plan</h2>
+                    <h1>Create a plan</h1>
 
                     <body>
                         Build a subscription plan that best fits your needs. We offer an assortment of the best 
