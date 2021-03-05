@@ -4,14 +4,17 @@ class HowItWorks extends React.Component {
     render() {
         return(
             <div class='subscribe-how-it-works-div'>
-                <h4>How it works</h4>
-
                 <div class='subscribe-how-it-works-large-container-div'>
-                    <div class='subscribe-horizontal-line-div'>
+
+                <div class='subscribe-line-container-div'>
+                    <div class='subscribe-horizontal-line-div' />
+
+                    <div class='subscribe-circle-container-div'>
                         <div class='subscribe-circle-div' />
                         <div class='subscribe-circle-div' />
                         <div class='subscribe-circle-div' />
                     </div>
+                </div>
 
                     <div class='subscribe-how-it-works-box-container-div'>
                         <div class='subscribe-how-it-works-box-div'>
@@ -38,7 +41,6 @@ class HowItWorks extends React.Component {
 
                     </div>
                 </div>
-
             </div>
         )
     }
