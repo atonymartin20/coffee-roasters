@@ -622,5 +622,63 @@
             }
         }
     }
+}
 
+// Order Summary
+.order-summary-container-div {
+    width: 100%;
+    height: 208px;
+    background: #2C343E;
+    border-radius: 10px;
+    @include flex(center, center);
+
+    .order-summary-text-container {
+        width: 602px;
+        height: 114px;
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+    
+        h4 {
+            height: 80px;
+            line-height: 40px;
+            color: #FFFFFF;
+    
+            .styled-span {
+                font-size: 2.4rem;
+                color: $dark-cyan;
+            }
+        }
+    
+        body {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
+
+    .order-summary-large-text-container {
+        width: 602px;
+        height: 154px;
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+    
+        h4 {
+            height: 120px;
+            line-height: 40px;
+            color: #FFFFFF;
+    
+            .styled-span {
+                font-size: 2.4rem;
+                color: $dark-cyan;
+            }
+        }
+    
+        body {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+    }
 }
