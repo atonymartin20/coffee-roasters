@@ -2,7 +2,6 @@ import React from 'react';
 
 class DesktopTracker extends React.Component {
     render() {
-        console.log(this.props)
         return(
             <div class='subscribe-desktop-tracker-div'>
                 <div class='subscribe-desktop-tracker-colored-div'>

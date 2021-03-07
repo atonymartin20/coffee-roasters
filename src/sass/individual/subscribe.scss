@@ -475,7 +475,10 @@
 
     .subscribe-choices-right-container-div {
         width: 730px;
-        // background: green;
+
+        @media (max-width: 700px) {
+            width: 100%;
+        }
     }
 }
 
@@ -549,9 +552,17 @@
         width: 100%;
         @include flex(space-between, center);
 
+        @media (max-width: 730px) {
+            padding: 0px 10px;
+        }
+
         h2 {
             height: 48px;
             color: $grey;
+
+            @media (max-width: $tablet-breakpoint) {
+                font-size: 3.2rem;
+            }
         }
 
         .flipped-img {
@@ -560,6 +571,14 @@
             -o-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             transform: rotate(180deg);
+        }
+    }
+
+    .info-bar:first-of-type {
+        h2 {
+            @media (max-width: 605px) {
+                height: 86px;
+            }
         }
     }
 
@@ -580,15 +599,34 @@
                 background: $pale-orange;
             }
 
+            @media (max-width: 800px) {
+                width: 32.32%;
+            }
+
+            @media (max-width: 720px) {
+                padding: 32px 10px 0px 10px;
+            }
+
             .choice-card-text-container {
                 width: 174px;
                 height: 134px;
                 @include flex(space-between, flex-start);
                 flex-direction: column;
 
+                @media (max-width: 720px) {
+                    justify-content: flex-start;
+                    width: 160px;
+                    height: 210px;
+                }
+
                 h4 {
                     height: 32px;
                     color: $dark-grey-blue;
+
+                    @media (max-width: 720px) {
+                        height: 64px;
+                        margin-bottom: 10px;
+                    }
                 }
 
                 body {
@@ -605,15 +643,34 @@
             border-radius: 8px;
             cursor: pointer;
 
+            @media (max-width: 800px) {
+                width: 32.32%;
+            }
+
+            @media (max-width: 720px) {
+                padding: 32px 10px 0px 10px;
+            }
+
             .choice-card-text-container {
                 width: 174px;
                 height: 134px;
                 @include flex(space-between, flex-start);
                 flex-direction: column;
 
+                @media (max-width: 720px) {
+                    justify-content: flex-start;
+                    width: 160px;
+                    height: 210px;
+                }
+
                 h4 {
                     height: 32px;
                     color: $light-cream;
+
+                    @media (max-width: 720px) {
+                        height: 64px;
+                        margin-bottom: 10px;
+                    }
                 }
 
                 body {
@@ -631,6 +688,11 @@
     background: #2C343E;
     border-radius: 10px;
     @include flex(center, center);
+    margin-bottom: 40px;
+
+    @media (max-width: 500px) {
+        margin-bottom: 55px;
+    }
 
     .order-summary-text-container {
         width: 602px;
