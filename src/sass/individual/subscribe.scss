@@ -901,3 +901,54 @@
         }
     }
 }
+
+// Subscribe Button
+.subscribe-create-your-plan-button-div {
+    width: 100%;
+    max-width: 1045px;
+    @include flex(flex-end, flex-start);
+
+    @media (max-width: 1120px) {
+        justify-content: center;
+    }
+
+    .subscribe-create-your-plan-button {
+        width: 217px;
+        height: 56px;
+        background: $dark-cyan;
+        border-radius: 6px;
+        border: 0px;
+        color: $light-cream;
+        font-family: $fraunces;
+        font-size: 1.8rem;
+        line-height: 25px;
+        font-style: normal;
+
+        &:hover {
+            background: #66D2CF;
+        }
+    
+        a {
+            color: $light-cream;
+            cursor: pointer;
+            text-align: center;
+            text-transform: none;
+            &:visited {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:link {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $light-cream;
+            }
+            &:active {
+                text-decoration: none;
+                color: $light-cream;
+            }
+        }
+    }
+}
