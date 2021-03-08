@@ -79,7 +79,7 @@ a {
     }
     &:hover {
         text-decoration: none;
-        color: $grey;
+        color: $dark-grey-blue;
     }
     &:active {
         text-decoration: none;
@@ -101,6 +101,12 @@ a:first-of-type {
     @media (max-width: $mobile-breakpoint) {
         width: 163px;
         height: 18px;
+    }
+}
+
+.footer-a {
+    &:hover {
+        color: $light-cream;
     }
 }
 

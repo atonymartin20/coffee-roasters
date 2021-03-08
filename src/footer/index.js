@@ -11,13 +11,13 @@ class Footer extends React.Component {
             <footer>
                 <img src={Logo} class='footer-logo' alt='Website Logo' />
                 <nav>
-                    <NavLink to='/'>
+                    <NavLink to='/' class='footer-a'>
                         Home
                     </NavLink>
-                    <NavLink to='/about'>
+                    <NavLink to='/about' class='footer-a'>
                         About us
                     </NavLink>
-                    <NavLink to='/plan'>
+                    <NavLink to='/plan' class='footer-a'>
                         Create your plan
                     </NavLink>
                 </nav>
