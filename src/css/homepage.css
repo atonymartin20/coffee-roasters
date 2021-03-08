@@ -233,7 +233,7 @@ a:link {
 }
 a:hover {
   text-decoration: none;
-  color: #83888F;
+  color: #333D4B;
 }
 a:active {
   text-decoration: none;
@@ -255,6 +255,10 @@ a:first-of-type {
     width: 163px;
     height: 18px;
   }
+}
+
+.footer-a:hover {
+  color: #FEFCF7;
 }
 
 .dropdown {
@@ -580,10 +584,13 @@ footer .twitter-logo {
   font-size: 1.8rem;
   line-height: 25px;
   font-style: normal;
+  cursor: pointer;
+}
+.homepage-header-text-container button:hover {
+  background: #66D2CF;
 }
 .homepage-header-text-container button a {
   color: #FEFCF7;
-  cursor: pointer;
   text-align: center;
   text-transform: none;
 }
@@ -1472,6 +1479,10 @@ footer .twitter-logo {
   font-size: 1.8rem;
   line-height: 25px;
   font-style: normal;
+  cursor: pointer;
+}
+.how-it-works-div button:hover {
+  background: #66D2CF;
 }
 @media (max-width: 768px) {
   .how-it-works-div button {
@@ -1485,7 +1496,6 @@ footer .twitter-logo {
 }
 .how-it-works-div button a {
   color: #FEFCF7;
-  cursor: pointer;
   text-align: center;
   text-transform: none;
 }
@@ -1529,10 +1539,13 @@ footer .twitter-logo {
   font-size: 1.8rem;
   line-height: 25px;
   font-style: normal;
+  cursor: pointer;
+}
+.create-your-plan-button:hover {
+  background: #66D2CF;
 }
 .create-your-plan-button a {
   color: #FEFCF7;
-  cursor: pointer;
   text-align: center;
   text-transform: none;
 }

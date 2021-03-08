@@ -134,10 +134,14 @@
         font-size: 1.8rem;
         line-height: 25px;
         font-style: normal;
+        cursor: pointer;
+
+        &:hover {
+            background: #66D2CF;
+        }
 
         a {
             color: $light-cream;
-            cursor: pointer;
             text-align: center;
             text-transform: none;
             &:visited {
@@ -927,6 +931,11 @@
         font-size: 1.8rem;
         line-height: 25px;
         font-style: normal;
+        cursor: pointer;
+
+        &:hover {
+            background: #66D2CF;
+        }
 
         @media (max-width: $tablet-breakpoint) {
             display: block;
@@ -938,7 +947,6 @@
 
         a {
             color: $light-cream;
-            cursor: pointer;
             text-align: center;
             text-transform: none;
             &:visited {
@@ -984,15 +992,14 @@
     font-size: 1.8rem;
     line-height: 25px;
     font-style: normal;
-    // margin-left: 15%;
+    cursor: pointer;
 
-    @media (max-width: 1439px) {
-        // margin-left: 9%;
+    &:hover {
+        background: #66D2CF;
     }
 
     a {
         color: $light-cream;
-        cursor: pointer;
         text-align: center;
         text-transform: none;
         &:visited {
