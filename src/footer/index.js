@@ -9,22 +9,22 @@ class Footer extends React.Component {
     render() {
         return(
             <footer>
-                <img src={Logo} class='footer-logo' alt='Website Logo' />
+                <img src={Logo} className='footer-logo' alt='Website Logo' />
                 <nav>
-                    <NavLink to='/' class='footer-a'>
+                    <NavLink to='/' className='footer-a'>
                         Home
                     </NavLink>
-                    <NavLink to='/about' class='footer-a'>
+                    <NavLink to='/about' className='footer-a'>
                         About us
                     </NavLink>
-                    <NavLink to='/plan' class='footer-a'>
+                    <NavLink to='/plan' className='footer-a'>
                         Create your plan
                     </NavLink>
                 </nav>
-                <div class='social-div'>
-                    <img src={FBLogo} class='social-logo' alt='Facebook Logo' />
-                    <img src={TwitterLogo} class='twitter-logo' alt='Twitter Logo' />
-                    <img src={IGLogo} class='social-logo' alt='Instagram Logo' />
+                <div className='social-div'>
+                    <img src={FBLogo} className='social-logo' alt='Facebook Logo' />
+                    <img src={TwitterLogo} className='twitter-logo' alt='Twitter Logo' />
+                    <img src={IGLogo} className='social-logo' alt='Instagram Logo' />
                 </div>
             </footer>
         )

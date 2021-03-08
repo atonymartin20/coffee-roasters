@@ -28,13 +28,13 @@ class Navbar extends React.Component {
             <>
                 {this.state.open ? 
                     <div>
-                        <div class='nav-spacer' />
+                        <div className='nav-spacer' />
                         <Dropdown close={this.closeDropdown} />
                     </div> 
                 :
-                    <div class='navbar'>
-                        <img src={Logo} class='header-logo' alt='Website Logo' />
-                        <nav class='header-nav'>
+                    <div className='navbar'>
+                        <img src={Logo} className='header-logo' alt='Website Logo' />
+                        <nav className='header-nav'>
                             <NavLink to='/'>
                                 Home
                             </NavLink>
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
                                 Create your plan
                             </NavLink>
                         </nav>
-                        <img src={HamburgerIcon} class='hamburger' onClick={this.openDropdown} alt='Close Icon' />
+                        <img src={HamburgerIcon} className='hamburger' onClick={this.openDropdown} alt='Close Icon' />
                     </div>
                 }
             </>

@@ -6,13 +6,13 @@ import CommitmentTabletIMG from '../assets/about/tablet/image-commitment.jpg';
 class Commitment extends React.Component {
     render() {
         return(
-            <div class='commitment-div'>
-                <img src={CommitmentDesktopIMG} class='commitment-desktop-img' alt='Man with Coffee' />
-                <img src={CommitmentMobileIMG} class='commitment-mobile-img' alt='Man with Coffee' />
-                <img src={CommitmentTabletIMG} class='commitment-tablet-img' alt='Man with Coffee' />
+            <div className='commitment-div'>
+                <img src={CommitmentDesktopIMG} className='commitment-desktop-img' alt='Man with Coffee' />
+                <img src={CommitmentMobileIMG} className='commitment-mobile-img' alt='Man with Coffee' />
+                <img src={CommitmentTabletIMG} className='commitment-tablet-img' alt='Man with Coffee' />
 
 
-                <div class='commitment-text-div'>
+                <div className='commitment-text-div'>
                     <h2>Our commitment</h2>
 
                     <body>

@@ -10,7 +10,7 @@ import '../css/about.css';
 class About extends React.Component {
     render() {
         return(
-            <div class='about-outside-div'>
+            <div className='about-outside-div'>
 				<Navbar />
                 <Header />
                 <Commitment />

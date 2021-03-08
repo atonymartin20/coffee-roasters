@@ -11,7 +11,7 @@ import '../css/homepage.css';
 class Homepage extends React.Component {
     render() {
         return(
-            <div class='homepage-outside-div'>
+            <div className='homepage-outside-div'>
 				<Navbar />
 				<Header />
 				<Collection />

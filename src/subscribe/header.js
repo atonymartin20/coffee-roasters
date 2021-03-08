@@ -3,8 +3,8 @@ import React from 'react';
 class Header extends React.Component {
     render() {
         return(
-            <header class='subscribe-header'>
-                <div class='subscribe-header-text-container'>
+            <header className='subscribe-header'>
+                <div className='subscribe-header-text-container'>
                     <h1>Create a plan</h1>
 
                     <body>

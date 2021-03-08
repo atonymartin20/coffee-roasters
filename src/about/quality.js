@@ -24,9 +24,9 @@ class Quality extends React.Component {
 					</div>
 				</div>
 
-                <img src={QualityDesktopIMG} class='quality-desktop-img' alt='Coffee Cup' />
-                <img src={QualityTabletIMG} class='quality-tablet-img' alt='Coffee Cup' />
-                <img src={QualityMobileIMG} class='quality-mobile-img' alt='Coffee Cup' />
+                <img src={QualityDesktopIMG} className='quality-desktop-img' alt='Coffee Cup' />
+                <img src={QualityTabletIMG} className='quality-tablet-img' alt='Coffee Cup' />
+                <img src={QualityMobileIMG} className='quality-mobile-img' alt='Coffee Cup' />
 			</div>
 		);
 	}

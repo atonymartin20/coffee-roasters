@@ -6,14 +6,14 @@ import UnitedKingdomIcon from '../assets/about/desktop/illustration-uk.svg';
 class Headquarters extends React.Component {
     render() {
         return(
-            <div class='headquarters-div'>
+            <div className='headquarters-div'>
                 <h4>Our headquarters</h4>
 
-                <div class='headquarters-info-div'>
-                    <div class='headquarters-info-box-div'>
+                <div className='headquarters-info-div'>
+                    <div className='headquarters-info-box-div'>
                         <img src={UnitedKingdomIcon} alt='United Kingdom Icon' />
 
-                        <div class='headquarters-info-textbox-div'>
+                        <div className='headquarters-info-textbox-div'>
                             <h3>United Kingdom</h3>
                             <body>68 Asfordby Rd<br />
                             Alcaston<br />
@@ -22,10 +22,10 @@ class Headquarters extends React.Component {
                         </div>
                     </div>
 
-                    <div class='headquarters-info-box-div'>
+                    <div className='headquarters-info-box-div'>
                         <img src={CanadaIcon} alt='Canada Icon' />
 
-                        <div class='headquarters-info-textbox-div'>
+                        <div className='headquarters-info-textbox-div'>
                             <h3>Canada</h3>
                             <body>1528 Eglinton Avenue<br />
                             Toronto<br />
@@ -34,10 +34,10 @@ class Headquarters extends React.Component {
                         </div>
                     </div>
 
-                    <div class='headquarters-info-box-div'>
+                    <div className='headquarters-info-box-div'>
                         <img src={AustraliaIcon} alt='Australia Icon' />
 
-                        <div class='headquarters-info-textbox-div'>
+                        <div className='headquarters-info-textbox-div'>
                             <h3>Australia</h3>
                             <body>36 Swanston Street<br />
                             Kewell<br />
