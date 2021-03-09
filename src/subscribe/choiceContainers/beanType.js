@@ -1,10 +1,10 @@
 import React from 'react';
 import ArrowIcon from '../../assets/plan/desktop/icon-arrow.svg';
 
-class Deliveries extends React.Component {
+class BeanType extends React.Component {
 	state = {
 		expanded: false,
-		choice: this.props.deliveries,
+		choice: this.props.bean,
 	};
 
 	openChoices = (event) => {
@@ -22,27 +22,20 @@ class Deliveries extends React.Component {
 	};
 
 	chooseChoice = (value) => {
-		this.props.updateDeliveries(value);
+		this.props.updateBean(value);
 		this.setState({
 			choice: value,
 		});
 	};
 
 	componentDidUpdate = () => {
-		if(this.props.preferences === 'Capsules') {
-			if (this.props.quantity !== '_____' && this.state.expanded === false) {
-				this.setState({
-					expanded: true,
-				});
-			}
-		}
-
-		else {
-			if (this.props.grind !== '_____' && this.state.expanded === false) {
-				this.setState({
-					expanded: true,
-				});
-			}
+		if (
+			this.props.preferences !== '_____' &&
+			this.state.expanded === false
+		) {
+			this.setState({
+				expanded: true,
+			});
 		}
 	};
 
@@ -51,7 +44,7 @@ class Deliveries extends React.Component {
 			<div className="choice-container">
 				{this.state.expanded === false ? (
 					<div className="info-bar">
-						<h2>How often should we deliver?</h2>
+						<h2>What type of coffee?</h2>
 						<img
 							src={ArrowIcon}
 							alt="Arrow Icon"
@@ -61,7 +54,7 @@ class Deliveries extends React.Component {
 				) : (
 					<div className="spacing-div">
 						<div className="info-bar">
-							<h2>How often should we deliver?</h2>
+							<h2>What type of coffee?</h2>
 							<img
 								src={ArrowIcon}
 								alt="Arrow Icon"
@@ -71,18 +64,18 @@ class Deliveries extends React.Component {
 						</div>
 
 						<div className="choice-large-container-div">
-							{this.state.choice !== 'Every Week' ? (
+							{this.state.choice !== 'Single Origin' ? (
 								<div
 									className="choice-card"
 									onClick={() =>
-										this.chooseChoice('Every Week')
+										this.chooseChoice('Single Origin')
 									}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every week</h4>
+										<h4>Single Origin</h4>
 										<body>
-											$14.00 per shipment. Includes free
-											first-class shipping.
+											Distinct, high quality coffee from a
+											specific family-owned farm
 										</body>
 									</div>
 								</div>
@@ -90,78 +83,70 @@ class Deliveries extends React.Component {
 								<div
 									className="choice-card-selected"
 									onClick={() =>
-										this.chooseChoice('Every Week')
+										this.chooseChoice('Single Origin')
 									}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every week</h4>
+										<h4>Single Origin</h4>
 										<body>
-											$14.00 per shipment. Includes free
-											first-class shipping.
+											Distinct, high quality coffee from a
+											specific family-owned farm
 										</body>
 									</div>
 								</div>
 							)}
 
-							{this.state.choice !== 'Every 2 Weeks' ? (
+							{this.state.choice !== 'Decaf' ? (
 								<div
 									className="choice-card"
-									onClick={() =>
-										this.chooseChoice('Every 2 Weeks')
-									}
+									onClick={() => this.chooseChoice('Decaf')}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every 2 weeks</h4>
+										<h4>Decaf</h4>
 										<body>
-											$17.25 per shipment. Includes free
-											priority shipping.
+											Just like regular coffee, except the
+											caffeine has been removed
 										</body>
 									</div>
 								</div>
 							) : (
 								<div
 									className="choice-card-selected"
-									onClick={() =>
-										this.chooseChoice('Every 2 Weeks')
-									}
+									onClick={() => this.chooseChoice('Decaf')}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every 2 weeks</h4>
+										<h4>Decaf</h4>
 										<body>
-											$17.25 per shipment. Includes free
-											priority shipping.
+											Just like regular coffee, except the
+											caffeine has been removed
 										</body>
 									</div>
 								</div>
 							)}
 
-							{this.state.choice !== 'Every Month' ? (
+							{this.state.choice !== 'Blended' ? (
 								<div
 									className="choice-card"
-									onClick={() =>
-										this.chooseChoice('Every Month')
-									}
+									onClick={() => this.chooseChoice('Blended')}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every month</h4>
+										<h4>Blended</h4>
 										<body>
-											$22.50 per shipment. Includes free
-											priority shipping.
+											Combination of two or three dark
+											roasted beans of organic coffees
 										</body>
 									</div>
 								</div>
 							) : (
 								<div
 									className="choice-card-selected"
-									onClick={() =>
-										this.chooseChoice('Every Month')
-									}
+									onClick={() => this.chooseChoice('Blended')}
 								>
 									<div className="choice-card-text-container">
-										<h4>Every month</h4>
+										<h4>Blended</h4>
 										<body>
-											$22.50 per shipment. Includes free
-											priority shipping.
+											Combination of two or three dark
+											roasted beans of organic coffees
 										</body>
 									</div>
 								</div>
@@ -174,4 +159,4 @@ class Deliveries extends React.Component {
 	}
 }
 
-export default Deliveries;
+export default BeanType;
