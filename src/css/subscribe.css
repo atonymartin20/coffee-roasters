@@ -1461,31 +1461,268 @@ footer .twitter-logo {
   font-size: 1.8rem;
   line-height: 25px;
   font-style: normal;
+  cursor: pointer;
 }
 .subscribe-create-your-plan-button-div .subscribe-create-your-plan-button:hover {
   background: #66D2CF;
 }
-.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button a {
+.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button:disabled {
+  background: #83888F;
+}
+
+.subscribe-modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.subscribe-modal-container .subscribe-modal-spacing-div {
+  width: 100%;
+  max-width: 540px;
+  min-height: 597px;
+  margin: 0 auto;
+  margin-top: 25.1765vh;
+  background: #FEFCF7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: "20px 0px";
+  border-radius: 8px;
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div {
+    width: 87.202%;
+    margin-top: 6.6vh;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div {
+  width: 100%;
+  height: 136px;
+  background: #333D4B;
+  border-radius: 7px 7px 0px 0px;
+  padding: 48px 0px 40px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 475px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div {
+    padding-left: 25px;
+    height: 116px;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div {
+    height: 88px;
+    padding: 0px 0px 0px 24px;
+  }
+}
+@media (max-width: 360px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div {
+    padding-left: 10px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div h2 {
+  height: 48px;
+  color: #FFFFFF;
+}
+@media (max-width: 450px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div h2 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div h2 {
+    height: 32px;
+    font-size: 2.8rem;
+    line-height: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div h2 {
+    font-size: 2.5rem;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div img {
+  color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+@media (max-width: 360px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-top-div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div {
+  width: 79.26%;
+  padding: 56px 0px;
+}
+@media (max-width: 450px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div {
+    padding: 25px 0px;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div {
+    width: 85.325%;
+    padding: 40px 0px 24px 0px;
+  }
+}
+@media (max-width: 350px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 7px;
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion {
+    height: 240px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 350px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion {
+    height: 275px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 {
+  line-height: 40px;
+  color: #83888F;
+}
+@media (max-width: 450px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 {
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 {
+    font-size: 2.2rem;
+    line-height: 40px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 .styled-span {
+  font-size: 2.4rem;
+  color: #0E8784;
+}
+@media (max-width: 450px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 .styled-span {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-top-portion h4 .styled-span {
+    font-size: 2.4rem;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-middle-portion {
+  width: 100%;
+  height: 78px;
+  margin-bottom: 47px;
+}
+@media (max-width: 500px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-middle-portion {
+    height: 103px;
+  }
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-middle-portion {
+    height: 125px;
+    margin-bottom: 21px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-middle-portion body {
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+@media (max-width: 375px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-middle-portion body {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion {
+    display: none;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion h3 {
+  height: 36px;
+  color: #333D4B;
+}
+@media (max-width: 525px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion h3 {
+    font-size: 2.8rem;
+  }
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion button {
+  width: 217px;
+  height: 56px;
+  background: #0E8784;
+  border-radius: 6px;
+  border: 0px;
   color: #FEFCF7;
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  line-height: 25px;
+  font-style: normal;
   cursor: pointer;
-  text-align: center;
-  text-transform: none;
 }
-.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button a:visited {
-  text-decoration: none;
-  color: #FEFCF7;
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion button:hover {
+  background: #66D2CF;
 }
-.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button a:link {
-  text-decoration: none;
-  color: #FEFCF7;
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-bottom-div-bottom-portion button:disabled {
+  background: #83888F;
 }
-.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button a:hover {
-  text-decoration: none;
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-checkout-mobile-button {
+  width: 100%;
+  height: 56px;
+  background: #0E8784;
+  border-radius: 6px;
+  border: 0px;
   color: #FEFCF7;
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  line-height: 25px;
+  font-style: normal;
+  cursor: pointer;
 }
-.subscribe-create-your-plan-button-div .subscribe-create-your-plan-button a:active {
-  text-decoration: none;
-  color: #FEFCF7;
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-checkout-mobile-button:hover {
+  background: #66D2CF;
+}
+.subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-checkout-mobile-button:disabled {
+  background: #83888F;
+}
+@media (min-width: 501px) {
+  .subscribe-modal-container .subscribe-modal-spacing-div .subscribe-modal-bottom-div .subscribe-modal-checkout-mobile-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=subscribe.css.map */
