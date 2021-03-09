@@ -5,6 +5,9 @@ class Deliveries extends React.Component {
 	state = {
 		expanded: false,
 		choice: this.props.deliveries,
+		pricePerEveryWeek: 0.00,
+		pricePerEvery2Weeks: 0.00,
+		pricePerEveryMonth: 0.00,
 	};
 
 	openChoices = (event) => {
@@ -44,6 +47,36 @@ class Deliveries extends React.Component {
 				});
 			}
 		}
+
+		if(this.props.quantity === '_____') {
+			return null;
+		}
+		
+		else if (this.props.quantity === '250g' && this.state.pricePerEveryWeek !== 7.20) {
+			this.setState({
+				pricePerEveryWeek: 7.20,
+				pricePerEvery2Weeks: 9.60,
+				pricePerEveryMonth: 12.00,
+			})
+		}
+
+		else if (this.props.quantity === '500g' && this.state.pricePerEveryWeek !== 13.00) {
+			this.setState({
+				pricePerEveryWeek: 13.00,
+				pricePerEvery2Weeks: 17.50,
+				pricePerEveryMonth: 22.00,
+			})
+		}
+
+		else if (this.props.quantity === '1000g' && this.state.pricePerEveryWeek !== 22.00) {
+			this.setState({
+				pricePerEveryWeek: 22.00,
+				pricePerEvery2Weeks: 32.00,
+				pricePerEveryMonth: 42.00,
+			})
+		}
+
+		else return null;
 	};
 
 	render() {
@@ -81,7 +114,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every week</h4>
 										<body>
-											$14.00 per shipment. Includes free
+											${this.state.pricePerEveryWeek.toFixed(2)} per shipment. Includes free
 											first-class shipping.
 										</body>
 									</div>
@@ -96,7 +129,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every week</h4>
 										<body>
-											$14.00 per shipment. Includes free
+											${this.state.pricePerEveryWeek.toFixed(2)} per shipment. Includes free
 											first-class shipping.
 										</body>
 									</div>
@@ -113,7 +146,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every 2 weeks</h4>
 										<body>
-											$17.25 per shipment. Includes free
+											${this.state.pricePerEvery2Weeks.toFixed(2)} per shipment. Includes free
 											priority shipping.
 										</body>
 									</div>
@@ -128,7 +161,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every 2 weeks</h4>
 										<body>
-											$17.25 per shipment. Includes free
+											${this.state.pricePerEvery2Weeks.toFixed(2)} per shipment. Includes free
 											priority shipping.
 										</body>
 									</div>
@@ -145,7 +178,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every month</h4>
 										<body>
-											$22.50 per shipment. Includes free
+											${this.state.pricePerEveryMonth.toFixed(2)} per shipment. Includes free
 											priority shipping.
 										</body>
 									</div>
@@ -160,7 +193,7 @@ class Deliveries extends React.Component {
 									<div className="choice-card-text-container">
 										<h4>Every month</h4>
 										<body>
-											$22.50 per shipment. Includes free
+											${this.state.pricePerEveryMonth.toFixed(2)} per shipment. Includes free
 											priority shipping.
 										</body>
 									</div>
