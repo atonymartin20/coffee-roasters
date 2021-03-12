@@ -18,8 +18,8 @@ class ChoicesContainer extends React.Component {
                     <Preferences preferences={this.props.preferences} updatePreferences={this.props.updatePreferences} />
                     <BeanType preferences={this.props.preferences} bean={this.props.bean} updateBean={this.props.updateBean} />
                     <Quantity bean={this.props.bean} quantity={this.props.quantity} updateQuantity={this.props.updateQuantity} />
-                    <GrindOption quantity={this.props.quantity} grind={this.props.grind} updateGrind={this.props.updateGrind} />
-                    <Deliveries grind={this.props.grind} deliveries={this.props.deliveries} updateDeliveries={this.props.updateDeliveries} />
+                    <GrindOption preferences={this.props.preferences} quantity={this.props.quantity} grind={this.props.grind} updateGrind={this.props.updateGrind} />
+                    <Deliveries preferences={this.props.preferences} quantity={this.props.quantity} grind={this.props.grind} deliveries={this.props.deliveries} updateDeliveries={this.props.updateDeliveries} />
                     <OrderSummary preferences={this.props.preferences} bean={this.props.bean} quantity={this.props.quantity} grind={this.props.grind} deliveries={this.props.deliveries} />
                     <CreatePlanButton preferences={this.props.preferences} bean={this.props.bean} quantity={this.props.quantity} grind={this.props.grind} deliveries={this.props.deliveries} openModal={this.props.openModal} />
                 </div>
