@@ -1091,6 +1091,54 @@ footer .twitter-logo {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+.choice-container .info-bar-disabled {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+@media (max-width: 730px) {
+  .choice-container .info-bar-disabled {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .choice-container .info-bar-disabled {
+    margin-bottom: 10px;
+  }
+}
+.choice-container .info-bar-disabled h2 {
+  height: 48px;
+  color: #83888F;
+}
+@media (max-width: 768px) {
+  .choice-container .info-bar-disabled h2 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 605px) {
+  .choice-container .info-bar-disabled h2 {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .choice-container .info-bar-disabled h2 {
+    height: 56px;
+    font-size: 2.4rem;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+  }
+}
+.choice-container .info-bar-disabled .flipped-img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 .choice-container .choice-large-container-div {
   width: 100%;
   height: 306px;
