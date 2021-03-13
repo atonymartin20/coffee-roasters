@@ -1,17 +1,35 @@
-// &:hover
-// cursor: pointer
-
-// &:disabled
-// color: $mdc-button-disabled-ink-color
-// cursor: default
-// pointer-events: none
-
 .navbar {
     @include flex(space-between, center);
     width: 100%;
     max-width: 1280px;
     height: 33px;
     margin: 40px auto;
+
+    @media (min-width: $desktop-breakpoint) {
+        min-width: 1280px;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        height: 26px;
+        margin-bottom: 52px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        height: 18px;
+        padding: 0px 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.nav-spacer {
+    width: 100%;
+    max-width: 1280px;
+    height: 33px;
+    margin: 40px auto;
+
+    @media (min-width: $desktop-breakpoint) {
+        min-width: 1280px;
+    }
 
     @media (max-width: $tablet-breakpoint) {
         height: 26px;
@@ -26,14 +44,11 @@
 }
 
 .close {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     @media (max-width: $mobile-breakpoint) {
-        width: 16px;
-        height: 15px;
-    }
-    @media (min-width: 601px) {
-        display: none;
+        width: 14px;
+        height: 13px;
     }
 }
 
@@ -64,7 +79,7 @@ a {
     }
     &:hover {
         text-decoration: none;
-        color: $grey;
+        color: $dark-grey-blue;
     }
     &:active {
         text-decoration: none;
@@ -84,7 +99,53 @@ a:first-of-type {
 
 .header-logo {
     @media (max-width: $mobile-breakpoint) {
-        height: 18px;
         width: 163px;
+        height: 18px;
     }
+}
+
+.footer-a {
+    &:hover {
+        color: $light-cream;
+    }
+}
+
+.dropdown {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    padding: 0 5.556%;
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 0 5.14323%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        padding: 0px;
+    }
+}
+
+.dropdown-links-container {
+    position: absolute;
+    width: 100%;
+    height: 577px;
+    left: 0px;
+    top: 95px;
+    padding-top: 35px;
+    background: linear-gradient(to top, rgba(254, 252, 247, 0.504981) 10%, #FEFCF7 52%);
+}
+
+.dropdown-link {
+    color: $dark-grey-blue;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    text-transform: none;
 }

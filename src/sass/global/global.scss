@@ -45,9 +45,33 @@ nav {
     letter-spacing: 1.0px;
 }
 
-.title {
+.title-alt {
     font-size: 15.0rem;
     font-family: $fraunces;
     line-height: 72px;
     text-transform: lowercase;
+
+    @media (max-width: 1200px) {
+        font-size: 12.0rem;
+    }
+
+    @media (max-width: 975px) {
+        font-size: 10.0rem;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 9.6rem;
+    }
+
+    @media (max-width: 765px) {
+        font-size: 7.5rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 5.5rem;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 4.0rem;
+    }
 }

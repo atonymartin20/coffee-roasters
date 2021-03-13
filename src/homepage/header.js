@@ -1,38 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
-        // Styling Notes
-        // Desktop
-						{/* Header Image 
-							1280px X 600px */}
-						{/* 135px bottom margin */}
-
-                        // Header Text
-                        // 493px X 367px
-
-                        // Header Inside Text Block
-                        // 493px X 255px
-
-
-                        // Header Button 217px X 56px
-
-        // Tablet
-            // 688px X 270px
-            // 72px bottom margin
-
-        // Mobile
-            // 327px X 345px
-            // 73px bottom margin
-
         return(
-            <header>
-                  Great coffee made simple.
+            <header className='homepage-header'>
+                <div className='homepage-header-text-container'>
+                    <h1>Great coffee made simple.</h1>
 
-Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-coffees from our best roasters delivered directly to your door, at your schedule.
+                    <body>
+                        Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+                        coffees from our best roasters delivered directly to your door, at your schedule.
+                    </body>
 
-Create your plan
+                    <button>
+                        <Link to='/plan'>Create your plan</Link>
+                    </button>
+                </div>
             </header>
         )
     }
